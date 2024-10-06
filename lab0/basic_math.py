@@ -1,14 +1,22 @@
 import numpy as np
 import scipy as sc
 
+a = ''
 
 def matrix_multiplication(matrix_a, matrix_b):
-    """
-    Задание 1. Функция для перемножения матриц с помощью списков и циклов.
-    Вернуть нужно матрицу в формате списка.
-    """
-    # put your code here
-    pass
+    # Проверка
+    if len(matrix_a[0]) != len(matrix_b):
+        raise ValueError("Матрицы нельзя перемножить")
+
+    # Создание результирующей матрицы с нулями
+    result = [[0 for _ in range(len(matrix_b[0]))] for _ in range(len(matrix_a))]
+
+    for i in range(len(matrix_a)):
+        for j in range(len(matrix_b[0])):
+            for k in range(len(matrix_b)):
+                result[i][j] += matrix_a[i][k] * matrix_b[k][j]
+
+    return result
 
 
 def functions(a_1, a_2):
@@ -17,8 +25,14 @@ def functions(a_1, a_2):
     Необходимо найти точки экстремума функции и определить, есть ли у функций общие решения.
     Вернуть нужно координаты найденных решения списком, если они есть. None, если их бесконечно много.
     """
-    # put your code here
-    pass
+    coefs1 = list(map(int, a_1.split()))
+    coefs2 = list(map(int, a_2.split()))
+    print(coefs1)
+    extr1 = sc.optimize.minimize_scalar(lambda x: coefs1[0] * x **2 + coefs1[1] * x + coefs1[2])
+    extr2 = sc.optimize.minimize_scalar(lambda x: coefs2[0] * x **2 + coefs2[1] * x + coefs2[2])
+    print(extr1.x, extr2.x)
+
+functions('1 0 -4', '1 -2 0')
 
 
 def skew(x):
