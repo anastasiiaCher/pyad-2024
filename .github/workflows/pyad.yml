@@ -17,4 +17,5 @@ jobs:
           pip install numpy scipy
       - name: Run unittests
         run: |
+          cd lab0
           python -m unittest discover ${{ github.head_ref }}
