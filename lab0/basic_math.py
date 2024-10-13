@@ -3,12 +3,15 @@ import scipy as sc
 
 
 def matrix_multiplication(m1, m2):
-    ans = [[0]*(len(m2[0])) for _ in range(len(m1))]
-    for i in range(len(m1)):
-        for j in range(len(m2[0])):
-            for k in range(len(m1[0])):
-                ans[i][j] += m1[i][k]*m2[k][j]
-    return ans
+    f len(m1[0]) != len(m2):
+        raise ValueError("Матрицы нельзя умножить из-за неправильных размеров")
+    else:
+        ans = [[0]*(len(m2[0])) for _ in range(len(m1))]
+        for i in range(len(m1)):
+            for j in range(len(m2[0])):
+                for k in range(len(m1[0])):
+                    ans[i][j] += m1[i][k]*m2[k][j]
+        return ans
 
 
 def functions(f, s):
@@ -18,42 +21,35 @@ def functions(f, s):
         return a*x**2+b*x+c
     print('Экстремум первой:', minimize_scalar(f, args = (a1,b1,c1)).x)
     print('Экстремум второй:', minimize_scalar(f, args = (a2,b2,c2)).x)
+    a, b, c = a1-a2, b1-b2, c1-c2
     ans = []
-    for a, b, c in [(a1,b1,c1), (a2,b2,c2)]:
-        ans.append([])
     D = b**2-4*a*c
     if a == 0 and b == 0 and c == 0:
-        ans[-1].append(float('inf'))
+        ans.append(float('inf'))
     elif a == 0 and b == 0 and c != 0:
         pass
     elif a == 0 and b != 0:
-        ans[-1].append(-c/b)
+        ans.append(-c/b)
     else:
         if D < 0:
-            ans[-1].append(complex(-b/(2*a), -abs(D**0.5)/(2*a)))
-            ans[-1].append(complex(-b/(2*a), abs(D**0.5)/(2*a)))
+            ans.append(complex(-b/(2*a), -abs(D**0.5)/(2*a)))
+            ans.append(complex(-b/(2*a), abs(D**0.5)/(2*a)))
         elif D == 0:
-            ans[-1].append(-b/(2*a))
+            ans.append(-b/(2*a))
         elif D > 0:
-            ans[-1].append((-b-D**0.5)/(2*a))
-            ans[-1].append((-b+D**0.5)/(2*a))
+            ans.append((-b-D**0.5)/(2*a))
+            ans.append((-b+D**0.5)/(2*a))
         else:
             pass
     res = []
-    if not ans[0] or not ans[1]:
+    if not ans:
         pass
-    elif ans[0][0] == float('inf') and ans[1][0] == float('inf'):
-        res.append(None)
+    elif ans[0] == float('inf'):
+        res = None
     else:
-        if ans[0][0] == float('inf'):
-            res = ans[1]
-        elif ans[1][0] == float('inf'):
-            res = ans[0]
-        else:
-            for x in ans[0]:
-                for y in ans[1]:
-                    if x == y:
-                        res.append(x)
+        for x in ans:
+            res.append((x,f(x,a1,b1,c1)))
+        res.sort()
     return res
 
 
