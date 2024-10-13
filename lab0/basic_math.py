@@ -2,7 +2,7 @@ import numpy as np
 import scipy as sc
 
 
-def matrix_multiplication(matrix_a, matrix_b):
+def matrix_multiplication(m1, m2):
     ans = [[0]*(len(m2[0])) for _ in range(len(m1))]
     for i in range(len(m1)):
         for j in range(len(m2[0])):
@@ -11,7 +11,7 @@ def matrix_multiplication(matrix_a, matrix_b):
     return ans
 
 
-def functions(a_1, a_2):
+def functions(f, s):
     a1, b1, c1 = map(int,f.split())
     a2, b2, c2 = map(int,s.split())
     def f(x, a, b, c):
@@ -57,14 +57,14 @@ def functions(a_1, a_2):
     return res
 
 
-def skew(x):
+def skew(a):
     sr = sum(a)/len(a)
     m3 = sum((x-sr)**3 for x in a)/len(a)
     sr = (sum((x-sr)**2 for x in a)/len(a))**0.5
     return round(m3/sr**3,2)
 
 
-def kurtosis(x):
+def kurtosis(a):
     sr = sum(a)/len(a)
     m4 = sum((x-sr)**4 for x in a)/len(a)
     sr = (sum((x-sr)**2 for x in a)/len(a))**0.5
