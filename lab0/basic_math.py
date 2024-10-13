@@ -3,7 +3,7 @@ import scipy as sc
 
 
 def matrix_multiplication(m1, m2):
-    f len(m1[0]) != len(m2):
+    if len(m1[0]) != len(m2):
         raise ValueError("Матрицы нельзя умножить из-за неправильных размеров")
     else:
         ans = [[0]*(len(m2[0])) for _ in range(len(m1))]
