@@ -104,14 +104,21 @@ def functions(a_1, a_2):
     # extr2 = sc.optimize.minimize_scalar(lambda x: coefs2[0] * x **2 + coefs2[1] * x + coefs2[2])
     # print(extr1.x, extr2.x)
 
+def momentum(pow, arr, av: float=0):
+    summ = 0
+    for i in arr:
+        summ += (i - av) ** pow
+    return summ / len(arr)
+
 
 def skew(x):
     """
     Задание 3. Функция для расчета коэффициента асимметрии.
     Необходимо вернуть значение коэффициента асимметрии, округленное до 2 знаков после запятой.
     """
-    # put your code here
-    pass
+    av = momentum(1, x)
+    disp = momentum(2, x, av)
+    return round(momentum(3, x, av) / disp**1.5, 2)
 
 
 def kurtosis(x):
@@ -119,5 +126,6 @@ def kurtosis(x):
     Задание 3. Функция для расчета коэффициента эксцесса.
     Необходимо вернуть значение коэффициента эксцесса, округленное до 2 знаков после запятой.
     """
-    # put your code here
-    pass
+    av = momentum(1, x)
+    disp = momentum(2, x, av)
+    return round(momentum(4, x, av) / disp**2 - 3, 2)
