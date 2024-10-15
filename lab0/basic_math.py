@@ -26,16 +26,19 @@ def moment_n(x, degree):
 
 def matrix_multiplication(matrix_a, matrix_b):
     new_matrix = []
-    new_len = min(len(matrix_a), len(matrix_b))
-    new_elem = 0
-    for j in range(new_len):
-        new_matrix.append([])
-        for w in range(len(matrix_b[0])):
-            for q in range(len(matrix_a[0])):
-                new_elem += matrix_a[j][q] * matrix_b[q][w]
-            new_matrix[-1].append(new_elem)
-            new_elem = 0
-    return new_matrix
+    if len(matrix_a[0]) != len(matrix_b):
+        raise ValueError
+    else:
+        new_len = min(len(matrix_a), len(matrix_b))
+        new_elem = 0
+        for j in range(new_len):
+            new_matrix.append([])
+            for w in range(len(matrix_b[0])):
+                for q in range(len(matrix_a[0])):
+                    new_elem += matrix_a[j][q] * matrix_b[q][w]
+                new_matrix[-1].append(new_elem)
+                new_elem = 0
+        return new_matrix
 
 
 def functions(a_1, a_2):
@@ -58,7 +61,7 @@ def functions(a_1, a_2):
     coef_c = a[2] - b[2]
     discrim = pow(coef_b, 2) - 4 * coef_a * coef_c
     if (a == b):
-        pass
+        return None
     elif (coef_a == 0 and coef_b != 0):
         x = (b[2] - a[2]) / (a[1] - b[1])
         y = f_1(x)
