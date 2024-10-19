@@ -82,7 +82,7 @@ def skew(x):
     def res(m, m2,m3,m4):
       A3 = m3/(m2**3**0.5)
       E4 = m4/(m2**4**0.5)-3
-      return A3,E4
+      return A3
     
     m2 = disp(m, sr, 2)
     m3 = disp(m, sr, 3)
@@ -98,5 +98,22 @@ def kurtosis(x):
     Задание 3. Функция для расчета коэффициента эксцесса.
     Необходимо вернуть значение коэффициента эксцесса, округленное до 2 знаков после запятой.
     """
-    # put your code here
+    sr = sum(m) / len(m)
+    def disp(m, mean, x):
+      mom = 0
+      for j in range(len(m)):
+        mom += (m[j]-mean) ** x
+      mom = mom/len(m)
+      return mom
+    
+    def res(m, m2,m3,m4):
+      A3 = m3/(m2**3**0.5)
+      E4 = m4/(m2**4**0.5)-3
+      return E4
+    
+    m2 = disp(m, sr, 2)
+    m3 = disp(m, sr, 3)
+    m4 = disp(m, sr, 4)
+    res = res(m, m2, m3, m4)
+    print(f'Среднее {sr}\n m2 {m2}\n m3 {m3}\n m4 {m4}\n Коэффициенты асимметрии и эксцесса: {res}')
     pass
