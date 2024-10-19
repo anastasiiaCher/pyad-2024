@@ -7,7 +7,7 @@ def matrix_multiplication(matrix_a, matrix_b):
     Задание 1. Функция для перемножения матриц с помощью списков и циклов.
     Вернуть нужно матрицу в формате списка.
     """
-        if len(matrix_a[0]) == len(matrix_b):
+    if len(matrix_a[0]) == len(matrix_b):
         c = []
         for _ in range(len(matrix_a)):
             c += [[0]*len(matrix_b[0])]
