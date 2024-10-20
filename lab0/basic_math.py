@@ -7,9 +7,27 @@ def matrix_multiplication(matrix_a, matrix_b):
     Задание 1. Функция для перемножения матриц с помощью списков и циклов.
     Вернуть нужно матрицу в формате списка.
     """
-    # put your code here
-    pass
 
+    def matrix_multiplication(matrix1, matrix2):
+      m = len(matrix1)
+      n = len(matrix1[0])
+      n_2 = len(matrix2)
+      p = len(matrix2[0])
+    
+      
+      if (n != n_2): 
+        raise ValueError()
+    
+      c = [[0 for x in range(p)] for y in range(m)]
+    
+      for i in range(m):
+        for k in range(p):
+          temp_sum = 0
+          for j in range(n):
+            temp_sum += matrix1[i][j]*matrix2[j][k] 
+          c[i][k] = temp_sum
+      
+      return c
 
 def functions(a_1, a_2):
     """
