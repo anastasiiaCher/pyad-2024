@@ -38,8 +38,6 @@ def functions(a_1, a_2):
     # put your code here
     eq1 = [int(x) for x in coeffs1.split()]
     eq2 = [int(x) for x in coeffs2.split()]
-    # Решаем уравнение: a11*x^2 + a12*x + a13 = a21*x^2 + a22*x + a23
-    # Приведем уравнение к виду: (a11-a21)x^2 + (a12-a22)x + (a13-a23) = 0
 
     if (eq1 == eq2):
       return
@@ -66,11 +64,9 @@ def functions(a_1, a_2):
         return [(x1, f(x1)), (x2, f(x2))]
       return [(x1, f(x1))]
     elif a == 0 and b != 0:
-      # Одно решение
       x = -c / b
       return [(x, f(x))]
     else:
-      # Нет решений
       return []
 
 
@@ -80,7 +76,12 @@ def skew(x):
     Необходимо вернуть значение коэффициента асимметрии, округленное до 2 знаков после запятой.
     """
     # put your code here
-    pass
+    x_e = sum(x)/len(x)
+    m_2 = (sum([(x_i - x_e)**2 for x_i in x])/len(x))**0.5
+    m_3 = sum([(x_i - x_e)**3 for x_i in x])/len(x)
+    A_3 = m_3/(m_2**3)
+
+    return round(A_3, 2)
 
 
 def kurtosis(x):
@@ -89,4 +90,9 @@ def kurtosis(x):
     Необходимо вернуть значение коэффициента эксцесса, округленное до 2 знаков после запятой.
     """
     # put your code here
-    pass
+    x_e = sum(x)/len(x)
+    m_2 = (sum([(x_i - x_e)**2 for x_i in x])/len(x))**0.5
+    m_4 = sum([(x_i - x_e)**4 for x_i in x])/len(x)
+    E_4 = m_4/(m_2**4) - 3
+
+    return round(E_4, 2)
