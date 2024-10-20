@@ -7,7 +7,7 @@ from collections import Counter
 def matrix_multiplication(matrix_a, matrix_b):
   rows_a, rows_b, cols_a, cols_b = len(matrix_a), len(matrix_b), len(matrix_a[0]), len(matrix_b[0])
   if cols_a != rows_b:
-      return []
+      raise ValueError("Число столбцов матрицы A должно быть равно числу строк матрицы B")
   result = [[0 for _ in range(cols_b)] for _ in range(rows_a)]
   for i in range(rows_a):
     for k in range(cols_b):
