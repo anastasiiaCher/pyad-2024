@@ -4,6 +4,7 @@ import scipy.stats
 
 import basic_math
 
+# для гх
 
 class MATHTestCase(unittest.TestCase):
     def test_matrix_multiplication(self):
