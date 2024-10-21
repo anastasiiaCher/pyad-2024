@@ -67,7 +67,7 @@ class MATHTestCase(unittest.TestCase):
         coeffs10 = "1 -4 4"
         self.assertEqual(basic_math.functions(coeffs9, coeffs10), [(1, 1), (5, 9)])
 
-'''
+
     def test_skew(self):
         x1 = [2, 3, 5, 7, 8]
         x2 = [2, 3, 2, 5, 7, 2, 2, 8]
@@ -92,4 +92,3 @@ class MATHTestCase(unittest.TestCase):
         random_integers = [random.randint(1, 99) for _ in range(10000)]
         self.assertEqual(basic_math.kurtosis(random_floats), round(scipy.stats.kurtosis(random_floats), 2))
         self.assertEqual(basic_math.kurtosis(random_integers), round(scipy.stats.kurtosis(random_integers), 2))
-'''
