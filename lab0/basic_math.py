@@ -52,13 +52,20 @@ def functions(a_1, a_2):
     return list(zip(real_roots, intersection_y))
 
 
+def moment(x, order):
+    return sum((i - sum(x) / len(x)) ** order for i in x) / len(x)
+
+
+def sigma(x):
+    return moment(x, 2) ** 0.5
+
+
 def skew(x):
     """
     Задание 3. Функция для расчета коэффициента асимметрии.
     Необходимо вернуть значение коэффициента асимметрии, округленное до 2 знаков после запятой.
     """
-    # put your code here
-    pass
+    return round(moment(x, 3) / sigma(x) ** 3, 2)
 
 
 def kurtosis(x):
@@ -66,5 +73,4 @@ def kurtosis(x):
     Задание 3. Функция для расчета коэффициента эксцесса.
     Необходимо вернуть значение коэффициента эксцесса, округленное до 2 знаков после запятой.
     """
-    # put your code here
-    pass
+    return round(moment(x, 4) / sigma(x) ** 4 - 3, 2)
