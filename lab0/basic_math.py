@@ -7,8 +7,15 @@ def matrix_multiplication(matrix_a, matrix_b):
     Задание 1. Функция для перемножения матриц с помощью списков и циклов.
     Вернуть нужно матрицу в формате списка.
     """
-    # put your code here
-    pass
+    if len(matrix_a[0]) != len(matrix_b):
+        raise ValueError("Число столбцов матрицы A не равно числу строк матрицы B")
+
+    output = [[0 for _ in range(len(matrix_b[0]))] for _ in range(len(matrix_a))]
+    for i in range(len(output)):
+        for j in range(len(output[i])):
+            for k in range(len(matrix_b)):
+                output[i][j] += matrix_a[i][k] * matrix_b[k][j]
+    return output
 
 
 def functions(a_1, a_2):
