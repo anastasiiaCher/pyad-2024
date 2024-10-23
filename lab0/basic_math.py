@@ -40,22 +40,24 @@ def functions(a_1, a_2):
     def f2(x):
         return coefs_2[0]*x**2 + coefs_2[1]*x + coefs_2[2]
 
+    def get_extr(func, coefs):
+        if coefs[0] > 0:
+            return f'Экстремум в точке: {minimize_scalar(func).x}'
+
     def system(x):
         return f1(x) - f2(x)
 
-    extrema_1 = minimize_scalar(f1).x if coefs_1[0] != 0 else None
-    extrema_2 = minimize_scalar(f2).x if coefs_2[0] != 0 else None
-
-    x = np.linspace(-100, 100, 500)
-    res = root(system, x)
-    
-    if not res.success or len(res.x) == 0:
-        return []
-
-    xroots = np.unique(res.x.round())
-    sols = list(set((round(x, 2), round(f1(x), 2)) for x in xroots))
-
-    return sols if len(sols) <= 2 else None
+    x = np.linspace(-4, 4, 100)
+    result = root(system, x)
+    x_roots = np.unique(result.x.round())
+    y_roots = f2(x_roots)
+    final_result = []
+    if result.success:
+        for i in range(len(x_roots)):
+            final_result.append((round(x_roots[i]), round(y_roots[i])))
+            if len(final_result) > 2:
+                return None
+    return final_result
 
 
 def skew(x):
@@ -71,22 +73,23 @@ def skew(x):
     m3 = sum([(xi - mean) ** 3 * ni for xi, ni in cnt.items()]) / n
 
     sigma = math.sqrt(m2)
-    A3 = m3 / (sigma ** 3)
+    asym = m3 / (sigma ** 3)
 
-    return round(A3, 2)
+    return round(asym, 2)
+
 
 def kurtosis(x):
     """
     Задание 3. Функция для расчета коэффициента эксцесса.
     Необходимо вернуть значение коэффициента эксцесса, округленное до 2 знаков после запятой.
     """
-    cnt = Counter(x)
+    count = Counter(x)
     n = len(x)
-    mean = sum(x) / n
+    mean_value = sum(x) / n
 
-    m2 = sum([(xi - mean) ** 2 * ni for xi, ni in cnt.items()]) / n
-    m4 = sum([(xi - mean) ** 4 * ni for xi, ni in cnt.items()]) / n
+    m2 = sum([(xi - mean_value) ** 2 * ni for xi, ni in count.items()]) / n
+    m4 = sum([(xi - mean_value) ** 4 * ni for xi, ni in count.items()]) / n
 
-    E4 = m4 / (m2 ** 2) - 3
+    ex = m4 / (m2 ** 2) - 3
     
-    return round(E4, 2)
+    return round(ex, 2)
