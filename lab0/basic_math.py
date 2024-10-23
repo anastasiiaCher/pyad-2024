@@ -1,3 +1,6 @@
+import numpy as np
+from scipy.optimize import minimize_scalar
+
 # Задание №1
 def matrix_multiplication(matrix_a, matrix_b):
     # Проверяем возможность умножения: число столбцов matrix1 должно быть равно числу строк matrix2
@@ -18,15 +21,56 @@ def matrix_multiplication(matrix_a, matrix_b):
 
 
 # Задание №2
+def functions(coeffs1, coeffs2):
+    # Преобразуем входные строки в коэффициенты
+    a11, a12, a13 = map(float, coeffs1.split())
+    a21, a22, a23 = map(float, coeffs2.split())
 
-def functions(a_1, a_2):
-    """
-    Задание 2. На вход поступает две строки, содержащие коэффициенты двух функций.
-    Необходимо найти точки экстремума функции и определить, есть ли у функций общие решения.
-    Вернуть нужно координаты найденных решения списком, если они есть. None, если их бесконечно много.
-    """
-    # put your code here
-    pass
+    # Определим функции F(x) и P(x)
+    def F(x):
+        return a11 * x ** 2 + a12 * x + a13
+
+    def P(x):
+        return a21 * x ** 2 + a22 * x + a23
+
+    # Найдем точки экстремума
+    res_F = minimize_scalar(F)
+    res_P = minimize_scalar(P)
+
+    # Вывод экстремумов
+    print(f"Экстремум F(x): x = {res_F.x}, F(x) = {res_F.fun}")
+    print(f"Экстремум P(x): x = {res_P.x}, P(x) = {res_P.fun}")
+
+    # Проверим, есть ли общие решения
+    # Решаем уравнение (a11 - a21)x^2 + (a12 - a22)x + (a13 - a23) = 0
+    A = a11 - a21
+    B = a12 - a22
+    C = a13 - a23
+
+    if A == 0 and B == 0:
+        if C == 0:
+            return None  # Бесконечно много решений
+        else:
+            return []  # Нет решений
+
+    # Если уравнение квадратичное, решаем его
+    common_solutions = []
+    if A == 0:
+        # Линейное уравнение Bx + C = 0
+        if B != 0:
+            x = -C / B
+            common_solutions.append((x, F(x)))
+    else:
+        # Квадратичное уравнение
+        discriminant = B ** 2 - 4 * A * C
+        if discriminant >= 0:
+            x1 = (-B + np.sqrt(discriminant)) / (2 * A)
+            x2 = (-B - np.sqrt(discriminant)) / (2 * A)
+            common_solutions.append((x1, F(x1)))
+            if discriminant > 0:
+                common_solutions.append((x2, F(x2)))
+
+    return sorted(common_solutions)
 
 
 # Задание №3
