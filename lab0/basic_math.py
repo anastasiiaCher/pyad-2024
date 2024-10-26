@@ -3,12 +3,17 @@ import scipy as sc
 
 
 def matrix_multiplication(matrix_a, matrix_b):
-    """
-    Задание 1. Функция для перемножения матриц с помощью списков и циклов.
-    Вернуть нужно матрицу в формате списка.
-    """
-    # put your code here
-    pass
+    if len(matrix_a[0]) != len(matrix_b):
+        raise ValueError("Невозможно умножить матрицы: количество столбцов первой матрицы не равно числу строк второй матрицы")
+    
+    result = [[0 for i in range(len(matrix_b[0]))] for j in range(len(matrix_a))]
+
+    for i in range(len(matrix_a)):
+        for j in range(len(matrix_b[0])):
+            for k in range(len(matrix_b)):
+                result[i][j] += matrix_a[i][k] * matrix_b[k][j]
+    
+    return result
 
 
 def functions(a_1, a_2):
