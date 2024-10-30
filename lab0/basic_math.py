@@ -28,7 +28,7 @@ def functions(a_1, a_2):
     """
     index1 = [int(a) for a in a_1.split()]
     index2 = [int(a) for a in a_2.split()]
-
+    
     if index1 == index2:
         return None
 
@@ -37,6 +37,13 @@ def functions(a_1, a_2):
 
     def P(x, index=index2):
         return index[0] * x ** 2 + index[1] * x + index[2]
+    # минимум фукнций
+    resF = sc.optimize.minimize_scalar(F)
+    minimum_F = resF.fun
+    minimizer_F = resF.x
+    resP = sc.optimize.minimize_scalar(P)
+    minimum_P = resP.fun
+    minimizer_P = resP.x
 
     a = index1[0] - index2[0]
     b = index1[1] - index2[1]
