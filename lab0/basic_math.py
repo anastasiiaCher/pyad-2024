@@ -64,6 +64,6 @@ def kurtosis(x):
     mean = sum(x) / n
     variance = sum((i - mean) ** 2 for i in x) / n
     std_dev = np.sqrt(variance)
-    kurt = sum((x - mean) ** 4 for x in data) / (n * std_dev**4) - 3
+    kurt = sum((i - mean) ** 4 for i in x) / (n * std_dev**4) - 3
     
     return round(kurt, 2)
