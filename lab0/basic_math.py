@@ -19,8 +19,8 @@ def functions(a_1, a_2):
   list_of_coefficient_1 = list(map(float, a_1.split()))
   list_of_coefficient_2 = list(map(float, a_2.split()))
 
-  extremum_1 = minimize_scalar(lambda x: list_of_coefficient_1[0]*x**2 + list_of_coefficient_1[1]*x + list_of_coefficient_1[2])
-  extremum_2 = minimize_scalar(lambda x: list_of_coefficient_2[0]*x**2 + list_of_coefficient_2[1]*x + list_of_coefficient_2[2])
+  extremum_1 = sc.minimize_scalar(lambda x: list_of_coefficient_1[0]*x**2 + list_of_coefficient_1[1]*x + list_of_coefficient_1[2])
+  extremum_2 = sc.minimize_scalar(lambda x: list_of_coefficient_2[0]*x**2 + list_of_coefficient_2[1]*x + list_of_coefficient_2[2])
   coordinates_of_extremum_1 = (extremum_1.x, extremum_1.fun)
   coordinates_of_extremum_2 = (extremum_2.x, extremum_2.fun)
   
