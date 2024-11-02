@@ -29,7 +29,7 @@ def matrix_multiplication(matrix_a, matrix_b):
       
       return c
 
-def functions(a_1, a_2):
+def functions(coeffs1, coeffs2):
     """
     Задание 2. На вход поступает две строки, содержащие коэффициенты двух функций.
     Необходимо найти точки экстремума функции и определить, есть ли у функций общие решения.
