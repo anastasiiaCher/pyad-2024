@@ -22,28 +22,30 @@ def functions(a_1, a_2):
     Необходимо найти точки экстремума функции и определить, есть ли у функций общие решения.
     Вернуть нужно координаты найденных решения списком, если они есть. None, если их бесконечно много.
     """
-    a_1, b_1, c_1 = map(float, a_1.split())
-    a_2, b_2, c_2 = map(float, a_2.split())
+    a1, b1, c1 = map(float, a_1.split())
+    a2, b2, c2 = map(float, a_2.split())
 
     if a_1 == a_2:
         return None
-    if a_1 != 0:
-        extr_F = (-b_1) / (2 * a_1)
+    if a1 != 0:
+        extr_F = (-b1) / (2 * a1)
     if a_2 != 0:
-        extr_P = (-b_2) / (2 * a_2)
+        extr_P = (-b2) / (2 * a2)
 
-    a = a_1 - a_2
-    b = b_1 - b_2
-    c = c_1 - c_2
+    a = a1 - a2
+    b = b1 - b2
+    c = c1 - c2
     discriminant = b ** 2 - 4 * a * c
     if a == 0:
         if b != 0:
             x = -c / b
-            return [(x, a_1 * x ** 2 + b_1 * x + c_1)]
+            return [(x, a1 * x ** 2 + b1 * x + c1)]
     elif discriminant > 0:
         x1 = round((b*(-1) + sqrt(discriminant)) / (2*a), 2)
         x2 = round((b*(-1) - sqrt(discriminant)) / (2*a), 2)
-        return [(x1, a_1 * x1 ** 2 + b_1 * x1 + c_1), (x2, a_1 * x2 ** 2 + b_1 * x2 + c_1)]
+        return [(x1, a1 * x1 ** 2 + b1 * x1 + c1), (x2, a1 * x2 ** 2 + b1 * x2 + c1)]
+    else:
+        return None
     return []
 
 
