@@ -87,7 +87,6 @@ def skew(x):
         print(f"An error occurred: {e}")
         return None
 
-
 def kurtosis(x):
     """
     Задание 3. Функция для расчета коэффициента эксцесса.
