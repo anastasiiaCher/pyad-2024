@@ -1,6 +1,6 @@
 import numpy as np
 import scipy as sc
-
+from scipy.optimize import minimize_scalar
 
 def matrix_multiplication(m1, m2):
     if len(m1[0]) != len(m2):
