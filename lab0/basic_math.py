@@ -1,144 +1,111 @@
 import numpy as np
-import scipy as sc
+from scipy.stats import skew as scipy_skew, kurtosis as scipy_kurtosis
+import random
+
+def matrix_multiplication(A, B):
+    # Проверяем, возможно ли умножение матриц
+    if len(A[0]) != len(B):
+        raise ValueError("Число столбцов первой матрицы должно быть равно числу строк второй матрицы")
+
+    # Инициализируем результирующую матрицу нулями
+    rows_A, cols_B, cols_A = len(A), len(B[0]), len(A[0])
+    result = [[0 for _ in range(cols_B)] for _ in range(rows_A)]
+
+    # Выполняем умножение матриц
+    for i in range(rows_A):
+        for j in range(cols_B):
+            for k in range(cols_A):
+                result[i][j] += A[i][k] * B[k][j]
 
 
-def matrix_multiplication(matrix_a, matrix_b):
-    """
-    Задание 1. Функция для перемножения матриц с помощью списков и циклов.
-    Вернуть нужно матрицу в формате списка.
-    """
-    import numpy as np
+    return result
 
-    matrix1 = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
-    matrix2 = np.array([[9, 8, 7], [6, 5, 4], [3, 2, 1]])
+def parse_coefficients(input_str):
+    return list(map(float, input_str.strip().split()))
 
-    def multiply(A, B):
-        if len(A[0]) != len(B):
-            return "Невозможно перемножить матрицы!"
+def solve_quadratic(A, B, C):
+    if A == 0:  # Линейное уравнение или константа
+        if B == 0:
+            return None if C == 0 else []  # Бесконечно много решений или их нет
+        x = -C / B
+        return [int(x)]
 
-        result = [[0 for d in range(len(B[0]))] for d in range(len(A))]
+    # Решение квадратного уравнения
+    D = B**2 - 4 * A * C  # Дискриминант
+    if D > 0:
+        x1 = (-B + np.sqrt(D)) / (2 * A)
+        x2 = (-B - np.sqrt(D)) / (2 * A)
+        return [int(x1), int(x2)]
+    elif D == 0:
+        x = -B / (2 * A)
+        return [int(x)]
+    else:
+        return []
 
-        for i in range(len(A)):
-            for k in range(len(B[0])):
-                for j in range(len(B)):
-                    result[i][k] += A[i][j] * B[j][k]
-        return result
+def calculate_difference_coefficients(coeffs1, coeffs2):
+    return [a - b for a, b in zip(coeffs1, coeffs2)]
 
-    result = multiply(matrix1, matrix2)
-    print("Произведение матриц:")
-    for row in result:
-        print(row)
-    pass
+def evaluate_function(coeffs, x):
+    a1, a2, a3 = coeffs
+    return int(a1 * x**2 + a2 * x + a3)
 
+def functions(coeffs1, coeffs2):
+    # Парсинг коэффициентов
+    parsed_coeffs1 = parse_coefficients(coeffs1)
+    parsed_coeffs2 = parse_coefficients(coeffs2)
 
-def functions(a_1, a_2):
-    """
-    Задание 2. На вход поступает две строки, содержащие коэффициенты двух функций.
-    Необходимо найти точки экстремума функции и определить, есть ли у функций общие решения.
-    Вернуть нужно координаты найденных решения списком, если они есть. None, если их бесконечно много.
-    """
-    import numpy as np
-    from scipy.optimize import minimize_scalar
-    def F(x, a11, a12, a13):
-        return a11 * x ** 2 + a12 * x + a13
+    # Вычисление разности коэффициентов
+    A, B, C = calculate_difference_coefficients(parsed_coeffs1, parsed_coeffs2)
 
-    def P(x, a21, a22, a23):
-        return a21 * x ** 2 + a22 * x + a23
+    # Решение уравнения F(x) - P(x) = 0
+    roots = solve_quadratic(A, B, C)
 
-    def extremum(a, b, c):
-        return -b / (2 * a)
+    if roots is None:  # Бесконечно много решений
+        return None
+    if not roots:  # Нет решений
+        return []
 
-    def find(coeffs1, coeffs2):
-        # Получаем коэффициенты первой и второй функции
-        a11, a12, a13 = map(float, coeffs1.split())
-        a21, a22, a23 = map(float, coeffs2.split())
-
-        # Находим экстремумы функций
-        exF = extremum(a11, a12, a13)
-        exP = extremum(a21, a22, a23)
-
-        # Проверим, равны ли экстремумы
-        if np.isclose(exF, exP, atol=1e-5):
-            print(f"У функций одинаковые экстремумы: x = {exF}")
-        else:
-            print(f"Экстремум F(x) = {exF}, экстремум P(x) = {exP}")
-
-        # Чтобы найти пересечение решений, решаем уравнение: a11 * x^2 + a12 * x + a13 = a21 * x^2 + a22 * x + a23
-        A = a11 - a21
-        B = a12 - a22
-        C = a13 - a23
-        discriminant = B ** 2 - 4 * A * C
-        if A == 0 and B == 0:
-            if C == 0:
-                print("Уравнение имеет бесконечно много решений.")
-            else:
-                print("Уравнение не имеет решений.")
-        elif A == 0:
-            # Уравнение линейное: B * x + C = 0
-            solution = -C / B
-            print(f"Уравнение имеет одно решение: x = {solution}")
-        else:
-            # Уравнение квадратное, смотрим на дискриминант
-            if discriminant > 0:
-                x1 = (-B + np.sqrt(discriminant)) / (2 * A)
-                x2 = (-B - np.sqrt(discriminant)) / (2 * A)
-                print(f"Уравнение имеет два решения: x1 = {x1}, x2 = {x2}")
-            elif discriminant == 0:
-                x = -B / (2 * A)
-                print(f"Уравнение имеет одно решение: x = {x}")
-            else:
-                print("Уравнение не имеет действительных решений.")
-
-    coef1 = input("Введите коэффициенты для функции F(x): ")
-    coef2 = input("Введите коэффициенты для функции P(x): ")
-    find(coef1, coef2)
-    pass
+    # Вычисление значений F(x) или P(x) для каждого корня
+    results = [(x, evaluate_function(parsed_coeffs1, x)) for x in roots]
+    return sorted(results)
 
 
-    """
-    Задание 3. Функция для расчета коэффициента асимметрии.
-    Необходимо вернуть значение коэффициента асимметрии, округленное до 2 знаков после запятой.
-    """
-    """
-    Задание 3. Функция для расчета коэффициента эксцесса.
-    Необходимо вернуть значение коэффициента эксцесса, округленное до 2 знаков после запятой.
-    """
-    from scipy.stats import kurtosis, skew
-    import numpy as np
+def calculate_moments(sample):
+    # Вычисляем выборочное среднее
+    x_mean = np.mean(sample)
 
-    def moments(data):
-        n = len(data)
-        mean = np.mean(data)
-        m2 = np.sum((data - mean) ** 2) / n
-        m3 = np.sum((data - mean) ** 3) / n
-        m4 = np.sum((data - mean) ** 4) / n
-        return m2, m3, m4
+    # Общий объем выборки
+    n = len(sample)
 
-    def calculate(data):
-        m2, m3, m4 = moments(data)
-        sigma = np.sqrt(m2)
-        skewness = m3 / sigma ** 3
-        kurt = m4 / sigma ** 4 - 3
-        return skewness, kurt
+    # Центральные моменты
+    m2 = np.sum((sample - x_mean)**2) / n
+    m3 = np.sum((sample - x_mean)**3) / n
+    m4 = np.sum((sample - x_mean)**4) / n
 
-    # Проверка
-    def check(data):
-        check_skew = skew(data)
-        check_kurt = kurtosis(data)
-        return check_skew, check_kurt
+    return x_mean, m2, m3, m4
 
-    # Пример использования
-    np.random.seed(109)
-    sample_data = np.random.normal(0, 1, 1000)
+def skew(sample):
+    # Рассчитаем моменты
+    x_mean, m2, m3, m4 = calculate_moments(sample)
 
-    # Рассчитаем коэффициенты асимметрии и эксцесса
-    skewness, kurt = calculate(sample_data)
-    print(f"Коэффициент асимметрии: {skewness}")
-    print(f"Коэффициент эксцесса: {kurt}")
+    # Стандартное отклонение
+    sigma = np.sqrt(m2)
 
-    # Проверим результаты через scipy
-    check_skew, check_kurt = check(sample_data)
-    print(f"Коэффициент асимметрии (scipy): {check_skew}")
-    print(f"Коэффициент эксцесса (scipy): {check_kurt}")
+    # Коэффициент асимметрии
+    A3 = m3 / sigma**3
 
+    # Округляем результат до 2 знаков после запятой и возвращаем
+    return round(A3, 2)
 
+def kurtosis(sample):
+    # Рассчитаем моменты
+    x_mean, m2, m3, m4 = calculate_moments(sample)
+
+    # Стандартное отклонение
+    sigma = np.sqrt(m2)
+
+    # Коэффициент эксцесса
+    E4 = m4 / sigma**4 - 3
+
+    # Округляем результат до 2 знаков после запятой и возвращаем
+    return round(E4, 2)
