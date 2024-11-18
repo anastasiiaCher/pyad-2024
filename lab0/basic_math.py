@@ -80,37 +80,27 @@ def skew(x):
     Задание 3. Функция для расчета коэффициента асимметрии.
     Необходимо вернуть значение коэффициента асимметрии, округленное до 2 знаков после запятой.
     """
-    def calculate_moments(data):
-        x_mean = np.mean(data)
-
-        m2 = np.mean((data - x_mean)**2)
-        m3 = np.mean((data - x_mean)**3)
-
-        return m2, m3
-
-    m2, m3 = calculate_moments(x)
-
-    # Коэффициент асимметрии
-    A3 = m3 / sigma**3
+    n = len(x)
     
-    return round(A3, 2)
+    mean_x = sum(x) / n 
+
+    m2 = sum((i - mean_x) ** 2 for i in x) / n  
+    m3 = sum((i - mean_x) ** 3 for i in x) / n 
+
+    value = m3 / (m2 ** 1.5)
+    return round(value, 2)
 
 def kurtosis(x):
     """
     Задание 3. Функция для расчета коэффициента эксцесса.
     Необходимо вернуть значение коэффициента эксцесса, округленное до 2 знаков после запятой.
     """
-    def calculate_moments(data):
-        x_mean = np.mean(data)
+    n = len(x)
 
-        m2 = np.mean((data - x_mean)**2)
-        m4 = np.mean((data - x_mean)**4)
+    x_mean = sum(x) / n 
 
-        return m2, m4
+    m2 = sum((i - x_mean) ** 2 for i in x) / n 
+    m4 = sum((i - x_mean) ** 4 for i in x) / n 
 
-    m2, m4 = calculate_moments(x)
-
-    # Коэффициент эксцесса
-    E4 = m4 / sigma**4 - 3
-    
-    return round(E4, 2)
+    value = m4 / (m2 ** 2) - 3
+    return round(value, 2)
