@@ -26,32 +26,54 @@ def functions(a_1, a_2):
     Необходимо найти точки экстремума функции и определить, есть ли у функций общие решения.
     Вернуть нужно координаты найденных решения списком, если они есть. None, если их бесконечно много.
     """
-    a1 = list(map(float, a_1.split()))
-    a2 = list(map(float, a_2.split()))
+    a11, a12, a13 = map(float, a_1.split())
+    a21, a22, a23 = map(float, a_2.split())
 
-    a_11, a_12, a_13 = a1
-    a_21, a_22, a_23 = a2
-    
+    # Определим функции
+    def F(x):
+        return a11 * x**2 + a12 * x + a13
 
-    if a_11 != 0: 
-        vertex_F = -a_12 / (2 * a_11)
-    if a_21 != 0:
-        vertex_P = -a_22 / (2 * a_21)
-    coeffs_diff = [a_11 - a_21, a_12 - a_22, a_13 - a_23]
-    roots = np.roots(coeffs_diff)
-    solutions = []
-    for root in roots:
-        if np.isreal(root): 
-            x = root.real
-            
-            y = a_11 * x**2 + a_12 * x + a_13
-            solutions.append((round(x), round(y)))
+    def P(x):
+        return a21 * x**2 + a22 * x + a23
 
-    
-    if all(coef == 0 for coef in coeffs_diff):
-        return None  
+    # Поиск экстремума через -b / (2a):
+    def extremum(a, b):
+        return -b / (2 * a)
 
-    return solutions if solutions else None
+    if a11 != 0:
+        extremum_F = extremum(a11, a12)
+    else:
+        None
+    if a21 != 0:
+        extremum_P = extremum(a21, a22)
+    else:
+        None
+
+
+    # Решаем уравнение F(x) = P(x) и находим дискриминант
+    A = a11 - a21
+    B = a12 - a22
+    C = a13 - a23
+
+    discriminant = B**2 - 4 * A * C
+
+    # Анализируем дискриминант для определения количества решений
+    if A == 0 and B == 0 and C == 0:
+        return None
+    elif A == 0 and B == 0:
+        return []
+    elif A == 0:
+        x = -C / B
+        return [(x, F(x))]
+    elif discriminant > 0:
+        x1 = (-B + np.sqrt(discriminant)) / (2 * A)
+        x2 = (-B - np.sqrt(discriminant)) / (2 * A)
+        return [(x1, F(x1)), (x2, F(x2))]
+    elif discriminant == 0:
+        x = -B / (2 * A)
+        return [(x, F(x))]
+    else:
+        return None
 
 
 def skew(x):
