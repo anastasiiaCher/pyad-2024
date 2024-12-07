@@ -71,24 +71,24 @@ class MATHTestCase(unittest.TestCase):
     def test_skew(self):
         x1 = [2,3,5,7,8]
         x2 = [2,3,2,5,7,2,2,8]
-        self.assertEqual(basic_math.skew(x1), round(scipy.skew(x1), 2))
-        self.assertEqual(basic_math.skew(x1), round(scipy.skew(x2), 2))
+        self.assertEqual(basic_math.skew(x1), round(scipy.stats.skew(x1), 2))
+        self.assertEqual(basic_math.skew(x2), round(scipy.stats.skew(x2), 2))
 
         random.seed(100)
         random_floats = [random.random() for _ in range(10000)]
         random_integers = [random.randint(1, 99) for _ in range(10000)]
-        self.assertEqual(basic_math.skew(random_floats), round(scipy.skew(random_floats), 2))
-        self.assertEqual(basic_math.skew(random_integers), round(scipy.skew(random_integers), 2))
+        self.assertEqual(basic_math.skew(random_floats), round(scipy.stats.skew(random_floats), 2))
+        self.assertEqual(basic_math.skew(random_integers), round(scipy.stats.skew(random_integers), 2))
 
 
     def test_kurtosis(self):
         x1 = [2,3,5,7,8]
         x2 = [2,3,2,5,7,2,2,8]
-        self.assertEqual(basic_math.kurtosis(x1), round(scipy.kurtosis(x1), 2))
-        self.assertEqual(basic_math.kurtosis(x1), round(scipy.kurtosis(x2), 2))
+        self.assertEqual(basic_math.kurtosis(x1), round(scipy.stats.kurtosis(x1), 2))
+        self.assertEqual(basic_math.kurtosis(x2), round(scipy.stats.kurtosis(x2), 2))
 
         random.seed(100)
         random_floats = [random.random() for _ in range(10000)]
         random_integers = [random.randint(1, 99) for _ in range(10000)]
-        self.assertEqual(basic_math.kurtosis(random_floats), round(scipy.kurtosis(random_floats), 2))
-        self.assertEqual(basic_math.kurtosis(random_integers), round(scipy.kurtosis(random_integers), 2))
+        self.assertEqual(basic_math.kurtosis(random_floats), round(scipy.stats.kurtosis(random_floats), 2))
+        self.assertEqual(basic_math.kurtosis(random_integers), round(scipy.stats.kurtosis(random_integers), 2))
