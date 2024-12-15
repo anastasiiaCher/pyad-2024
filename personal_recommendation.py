@@ -137,6 +137,7 @@ books.dropna(subset=['author', 'publisher', 'year', 'title'], inplace=True)  # �
 
 # Обработка данных Ratings.csv
 ratings.rename(columns={'User-ID': 'user_id', 'ISBN': 'item_id', 'Book-Rating': 'rating'}, inplace=True)
+original_ratings = ratings.copy()  # Сохраняем копию исходных данных с "0" для анализа
 ratings = ratings[ratings['rating'] > 0]  # Исключаем рейтинги 0
 
 # Исключаем книги с единственной оценкой и пользователей, оценивших только одну книгу
@@ -216,19 +217,28 @@ print(f"MAE для линейной регрессии (SGD): {mae_sgd}")
 with open('linreg.pkl', 'wb') as f:
     pickle.dump(sgd, f)
 
+# Поиск пользователя с наибольшим количеством "0" рейтингов
+user_with_most_zeros = original_ratings[original_ratings['rating'] == 0]['user_id'].value_counts().idxmax()
+zero_rated_books = original_ratings[(original_ratings['user_id'] == user_with_most_zeros) & (original_ratings['rating'] == 0)]
 
-# Сохранение тестовых данных для тестирования
-svd_test = pd.DataFrame(
-    [[pred.uid, pred.iid, pred.r_ui] for pred in predictions],
-    columns=['user_id', 'item_id', 'rating']
-)
-svd_test.to_csv('svd_test.csv', index=False)
+# Предсказания для книг с рейтингом "0"
+recommendations = []
+for item_id in zero_rated_books['item_id']:
+    svd_pred = svd.predict(user_with_most_zeros, item_id).est
+    if svd_pred >= 8:  # Фильтруем книги с прогнозируемым рейтингом >= 8
+        book_features = features[merged_data['item_id'] == item_id]
+        linreg_pred = sgd.predict(book_features)[0]
+        recommendations.append((item_id, svd_pred, linreg_pred))
 
-linreg_test = pd.DataFrame(X_test, columns=[f'feature_{i}' for i in range(X_test.shape[1])])
-linreg_test['y'] = y_test.reset_index(drop=True)
-linreg_test.to_csv('linreg_test.csv', index=False)
+# Сортируем рекомендации по убыванию рейтинга линейной регрессии
+recommendations.sort(key=lambda x: x[2], reverse=True)
 
-print("Все модели обучены и сохранены. Файлы для тестирования созданы.")
+# Записываем рекомендации в комментарий
+print("Рекомендации для пользователя с наибольшим количеством рейтингов 0:")
+for item_id, svd_pred, linreg_pred in recommendations:
+    book_title = books.loc[books['ISBN'] == item_id, 'title'].values[0]
+    print(f"{book_title} (SVD: {svd_pred:.2f}, LinReg: {linreg_pred:.2f})")
+
 
 from google.colab import files
 
