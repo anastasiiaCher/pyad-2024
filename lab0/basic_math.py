@@ -1,28 +1,61 @@
 import numpy as np
-import scipy as sc
-from scipy.optimize import minimize_scalar, fsolve
-from scipy.stats import skew as scipy_skew, kurtosis as scipy_kurtosis
-
 
 def matrix_multiplication(matrix_a, matrix_b):
     """
     Задание 1. Функция для перемножения матриц с помощью списков и циклов.
     Вернуть нужно матрицу в формате списка.
     """
-    # Проверка возможности умножения
-    if len(matrix_a[0]) != len(matrix_b):
-        return "Умножение невозможно: число столбцов первой матрицы не равно числу строк второй матрицы."
-    
-    # Инициализация результирующей матрицы нулями
-    result = [[0 for _ in range(len(matrix_b[0]))] for _ in range(len(matrix_a))]
+    rows_a = len(matrix_a)
+    cols_a = len(matrix_a[0]) if rows_a > 0 else 0
+    rows_b = len(matrix_b)
+    cols_b = len(matrix_b[0]) if rows_b > 0 else 0
 
-    # Умножение матриц через тройной цикл
-    for i in range(len(matrix_a)):
-        for j in range(len(matrix_b[0])):
-            for k in range(len(matrix_b)):
+    if cols_a != rows_b:
+        raise ValueError("Количество столбцов и строк не совпадают")
+
+    result = [[0 for _ in range(cols_b)] for _ in range(rows_a)]
+
+    for i in range(rows_a):
+        for j in range(cols_b):
+            for k in range(cols_a):
                 result[i][j] += matrix_a[i][k] * matrix_b[k][j]
-    
+
     return result
+
+def parse_coefficients(input_str):
+    return list(map(float, input_str.split()))
+
+def F(x, a):
+    return round(a[0] * x ** 2 + a[1] * x + a[2])
+
+def P(x, b):
+    return round(b[0] * x ** 2 + b[1] * x + b[2])
+
+def common_solutions(a, b):
+    coeff_diff = [a[0] - b[0], a[1] - b[1], a[2] - b[2]]
+
+    if np.all(np.isclose(coeff_diff, 0)):
+        return None
+
+    if coeff_diff[0] == 0:
+        if coeff_diff[1] == 0:
+            return []
+        else:
+            x = -coeff_diff[2] / coeff_diff[1]
+            return [(round(x), F(round(x), a))]
+
+    discriminant = coeff_diff[1] ** 2 - 4 * coeff_diff[0] * coeff_diff[2]
+
+    if discriminant < 0:
+        return []
+    elif discriminant == 0:
+        x = -coeff_diff[1] / (2 * coeff_diff[0])
+        return [(round(x), F(round(x), a))]
+    else:
+        sqrt_d = np.sqrt(discriminant)
+        x1 = (-coeff_diff[1] + sqrt_d) / (2 * coeff_diff[0])
+        x2 = (-coeff_diff[1] - sqrt_d) / (2 * coeff_diff[0])
+        return [(round(x1), F(round(x1), a)), (round(x2), F(round(x2), a))]
 
 
 def functions(a_1, a_2):
@@ -31,32 +64,12 @@ def functions(a_1, a_2):
     Необходимо найти точки экстремума функции и определить, есть ли у функций общие решения.
     Вернуть нужно координаты найденных решения списком, если они есть. None, если их бесконечно много.
     """
-    # Преобразование строк в коэффициенты
-    a11, a12, a13 = map(float, a_1.split())
-    a21, a22, a23 = map(float, a_2.split())
-    
-    # Определение функций F(x) и P(x)
-    def F(x):
-        return a11 * x**2 + a12 * x + a13
+    a = parse_coefficients(a_1)
+    b = parse_coefficients(a_2)
 
-    def P(x):
-        return a21 * x**2 + a22 * x + a23
+    solutions = common_solutions(a, b)
 
-    # Нахождение экстремумов через минимизацию
-    res_F = minimize_scalar(F)
-    res_P = minimize_scalar(P)
-    
-    # Поиск общих решений: F(x) = P(x)
-    def equation(x):
-        return F(x) - P(x)
-    
-    # Поиск решения
-    solution = fsolve(equation, x0=0)
-    
-    if np.isclose(F(solution), P(solution)):
-        return [solution[0]]
-    else:
-        return None
+    return solutions
 
 
 def skew(x):
@@ -64,10 +77,17 @@ def skew(x):
     Задание 3. Функция для расчета коэффициента асимметрии.
     Необходимо вернуть значение коэффициента асимметрии, округленное до 2 знаков после запятой.
     """
-    # Вычисляем коэффициент асимметрии с помощью scipy
-    skewness = scipy_skew(x)
-    
-    # Округляем до 2 знаков после запятой
+    if len(x) == 0:
+        raise ValueError("Выборка пуста.")
+
+    data = np.array(x)
+
+    mean = np.mean(data)
+
+    stddev = np.std(data, ddof=0)
+
+    skewness = np.sum((data - mean) ** 3) / (len(data) * stddev ** 3)
+
     return round(skewness, 2)
 
 
@@ -76,8 +96,12 @@ def kurtosis(x):
     Задание 3. Функция для расчета коэффициента эксцесса.
     Необходимо вернуть значение коэффициента эксцесса, округленное до 2 знаков после запятой.
     """
-    # Вычисляем коэффициент эксцесса с помощью scipy
-    excess = scipy_kurtosis(x)
-    
-    # Округляем до 2 знаков после запятой
-    return round(excess, 2)
+    data = np.array(x)
+
+    mean = np.mean(data)
+
+    stddev = np.std(data, ddof=0)
+
+    kurtosis = np.sum((data - mean) ** 4) / (len(data) * stddev ** 4) - 3
+
+    return round(kurtosis, 2)
