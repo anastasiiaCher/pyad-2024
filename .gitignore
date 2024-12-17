@@ -1,0 +1,109 @@
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# macOS resource forks
+._*
+
+# macOS Spotlight files
+.Spotlight-V100
+.Trashes
+
+# macOS Volume files
+.VolumeIcon.icns
+.metadata_never_index
+.fseventsd
+
+# Windows system files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# IDE-specific files
+.idea/
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Python specific files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtualenv
+venv/
+ENV/
+env/
+.venv/
+.python-version
+
+# Pytest cache
+.pytest_cache/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Coverage reports
+htmlcov/
+.tox/
+.coverage
+coverage.xml
+*.cover
+.hypothesis/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+.eggs/
+*.manifest
+*.spec
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+*.pid
+*.gz
+*.zip
+
+# Byte-compiled C extensions
+*.so
+
+# Django specific
+*.db.sqlite3
+*.db
+
+# MyPy cache
+.mypy_cache/
+
+# Profiler logs
+.prof/
+
+# Editor temporary files
+*.swp
+*.swo
+*.orig
+
+# Backup files
+*.bak
+*.old
+
+# Ignore local environment configuration files
+.env
+.env.*
+
+# Ignore pylint and mypy reports
+pylint.log
+mypy.log
+
+# Ignore test result artifacts
+.junit/
+
+# Other temporary files
+*.tgz
+*.tar.gz
+*.lock
