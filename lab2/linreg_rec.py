@@ -64,7 +64,7 @@ def title_preprocessing(text: str) -> str:
     return " ".join(tokens)
 
 
-def modeling(books: pd.DataFrame, ratings: pd.DataFrame) -> dict:
+def modeling(books: pd.DataFrame, ratings: pd.DataFrame) -> None:
     """В этой функции нужно выполнить следующие шаги:
     1. Бинаризовать или представить в виде чисел категориальные столбцы (кроме названий)
     2. Разбить данные на тренировочную и обучающую выборки
@@ -110,13 +110,6 @@ def modeling(books: pd.DataFrame, ratings: pd.DataFrame) -> dict:
 
     with open("linreg.pkl", "wb") as file:
         pickle.dump(linreg, file)
-
-    return {
-        "books": books,
-        "ratings": ratings,
-        "merged_data": merged_data,
-        "features": features
-    }
 
 
 if __name__ == "__main__":
