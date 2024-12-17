@@ -1,0 +1,50 @@
+                                              Book-Title  LinReg-Pr    SVD_Pr
+1703                 Howl and Other Poems (Pocket Poets)   3.785265  8.015329
+8463                            A Swiftly Tilting Planet   3.239699  8.011940
+915                   The Giver (21st Century Reference)   3.211489  8.306497
+24282  The Lion, the Witch and the Wardrobe (Full-Col...   3.204490  8.383249
+3349   The Hobbit : The Enchanting Prelude to The Lor...   3.182781  8.054563
+13664                  Frankenstein (Changing Our World)   3.168264  8.183535
+3454    Harry Potter and the Chamber of Secrets (Book 2)   3.152887  8.048863
+1530                                      The Green Mile   3.072037  8.097489
+21738                          Goodnight Moon Board Book   3.062814  8.869556
+2139   Harry Potter and the Sorcerer's Stone (Harry P...   3.062004  8.091581
+10496                                     A Fine Balance   2.980715  8.021464
+64330                                  The Power of Myth   2.954106  8.394643
+10292                                       The Talisman   2.939367  8.215478
+1295   Dealing With Dragons (Enchanted Forest Chronic...   2.921874  8.156794
+3157                                        Rising Tides   2.914801  8.095886
+555                                           Postmortem   2.877343  8.215324
+24354                         On the Banks of Plum Creek   2.868326  8.095709
+34226                                          The Twits   2.867027  8.396822
+5596   She Said Yes : The Unlikely Martyrdom of Cassi...   2.863315  8.077584
+5870                                              Misery   2.862044  8.702895
+5540                                         The Chamber   2.861669  8.065375
+18996                           The Biggest Pumpkin Ever   2.855098  8.380688
+63585                                       Tread Softly   2.844001  8.242750
+3842                    Charlotte's Web (Trophy Newbery)   2.842595  8.330588
+22940  The Black Cauldron (Chronicles of Prydain (Pap...   2.827395  8.108204
+8792                     One Flew Over the Cuckoo's Nest   2.821355  8.514338
+516                                       The Bean Trees   2.811609  8.136704
+3914                                           Yukon Ho!   2.798568  8.745965
+2550                                    The Color Purple   2.795229  8.102311
+900                       The Magician's Nephew (Narnia)   2.784332  8.640456
+2372                            Man's Search For Meaning   2.783529  8.113211
+26281  Hop on Pop (I Can Read It All by Myself Beginn...   2.777759  8.166665
+6222   E Is for Evidence: A Kinsey Millhone Mystery (...   2.771481  8.037113
+1323                                       Lonesome Dove   2.769334  8.475227
+12644                                   The Crystal Cave   2.764984  8.179985
+304                                October Sky: A Memoir   2.760489  8.346860
+11246          The Concrete Blonde (A Harry Bosch Novel)   2.738932  8.369929
+11324                      Little House in the Big Woods   2.731955  8.060762
+29652              The Magician's Nephew (rack) (Narnia)   2.726146  8.051975
+15695                               Bridge to Terabithia   2.697534  8.049459
+18710              Are You There God?  It's Me, Margaret   2.685288  8.082669
+4573                     Angela's Ashes (MMP) : A Memoir   2.643589  8.323050
+5726   The Watsons Go to Birmingham - 1963 (Yearling ...   2.641590  8.059641
+11329  Sideways Stories from Wayside School (Wayside ...   2.626023  8.296605
+60640                    Snow White and the Seven Dwarfs   2.590649  8.092152
+16772                                  A Wrinkle In Time   2.531040  8.021961
+1918                              Snow Falling on Cedars   2.530931  8.022603
+4461                                    Love You Forever   2.377596  8.098546
+3742                                               Night   2.333454  8.003688
