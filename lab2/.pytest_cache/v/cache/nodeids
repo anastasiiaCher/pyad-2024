@@ -1,0 +1,4 @@
+[
+  "test_recommendations.py::RecsTestCase::test_linreg_recs",
+  "test_recommendations.py::RecsTestCase::test_svd_recs"
+]
