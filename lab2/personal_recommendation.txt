@@ -1,0 +1,758 @@
+Name: The Kalahari Typing School for Men (No. 1 Ladies' Detective Agency), SVD rating: 8.87, LinReg rating: 8.45
+
+Name: The Waste Lands (The Dark Tower, Book 3), SVD rating: 9.11, LinReg rating: 8.43
+
+Name: Riding in Cars With Boys: Confessions of a Bad Girl Who Makes Good, SVD rating: 8.25, LinReg rating: 8.42
+
+Name: The Golden Compass (His Dark Materials, Book 1), SVD rating: 8.58, LinReg rating: 8.38
+
+Name: The Other Boleyn Girl, SVD rating: 8.64, LinReg rating: 8.36
+
+Name: Girl Meets God : A Memoir, SVD rating: 8.17, LinReg rating: 8.33
+
+Name: She's Come Undone (Oprah's Book Club), SVD rating: 8.70, LinReg rating: 8.31
+
+Name: Girl with a Pearl Earring, SVD rating: 8.73, LinReg rating: 8.30
+
+Name: The Jungle Book (Wordsworth Collection), SVD rating: 8.39, LinReg rating: 8.25
+
+Name: GOOD EARTH, SVD rating: 8.08, LinReg rating: 8.25
+
+Name: L'Etranger (Collection Folio, 2), SVD rating: 8.05, LinReg rating: 8.24
+
+Name: True Tales of American Life, SVD rating: 8.05, LinReg rating: 8.20
+
+Name: American Tabloid, SVD rating: 8.85, LinReg rating: 8.19
+
+Name: Good Grief : A Novel, SVD rating: 8.16, LinReg rating: 8.17
+
+Name: The Good Earth (Enriched Classics), SVD rating: 8.14, LinReg rating: 8.16
+
+Name: Adventures of Huckleberry Finn (Dover Thrift Editions), SVD rating: 8.77, LinReg rating: 8.14
+
+Name: Of Mice and Men (Penguin Great Books of the 20th Century), SVD rating: 8.21, LinReg rating: 8.14
+
+Name: The Yokota Officers Club (Ballantine Reader's Circle), SVD rating: 8.00, LinReg rating: 8.09
+
+Name: Doomsday Book, SVD rating: 8.12, LinReg rating: 8.08
+
+Name: Sweet Thursday, SVD rating: 8.62, LinReg rating: 8.07
+
+Name: Angle of Repose (Contemporary American Fiction), SVD rating: 8.95, LinReg rating: 8.06
+
+Name: Time Cat: The Remarkable Journeys of Jason and Gareth, SVD rating: 8.12, LinReg rating: 8.03
+
+Name: Dead Sleep, SVD rating: 8.19, LinReg rating: 8.03
+
+Name: The Lion, the Witch, and the Wardrobe (The Chronicles of Narnia, Book 2), SVD rating: 8.69, LinReg rating: 8.03
+
+Name: Milagro Beanfield War, SVD rating: 8.04, LinReg rating: 8.02
+
+Name: Waiting: The True Confessions of a Waitress, SVD rating: 8.78, LinReg rating: 7.98
+
+Name: White House Pantry Murder, SVD rating: 8.04, LinReg rating: 7.98
+
+Name: Harry Potter and the Prisoner of Azkaban (Book 3), SVD rating: 8.52, LinReg rating: 7.97
+
+Name: The Carnivorous Carnival (A Series of Unfortunate Events, Book 9), SVD rating: 8.48, LinReg rating: 7.97
+
+Name: Their eyes were watching God: A novel, SVD rating: 8.19, LinReg rating: 7.96
+
+Name: Soul of the Fire (Sword of Truth, Book 5), SVD rating: 8.26, LinReg rating: 7.95
+
+Name: Apollo 13 : Lost Moon, SVD rating: 8.14, LinReg rating: 7.95
+
+Name: A Woman of Substance, SVD rating: 8.14, LinReg rating: 7.92
+
+Name: Their Eyes Were Watching God: A Novel, SVD rating: 8.88, LinReg rating: 7.92
+
+Name: Candide (Penguin Classics), SVD rating: 8.54, LinReg rating: 7.90
+
+Name: The Cat Who Went to Heaven, SVD rating: 8.40, LinReg rating: 7.88
+
+Name: Pride and Prejudice (The Penguin English Library, El 72), SVD rating: 8.77, LinReg rating: 7.87
+
+Name: Don't Cry Now: A Novel, SVD rating: 8.22, LinReg rating: 7.87
+
+Name: Atonement: A Novel, SVD rating: 8.13, LinReg rating: 7.86
+
+Name: The Cat Ate My Gymsuit, SVD rating: 8.22, LinReg rating: 7.86
+
+Name: Lord of the Flies, SVD rating: 8.99, LinReg rating: 7.86
+
+Name: Sarum: The Novel of England, SVD rating: 8.38, LinReg rating: 7.86
+
+Name: Jack and Jill: A Novel, SVD rating: 8.22, LinReg rating: 7.86
+
+Name: The Devil in the White City : Murder, Magic, and Madness at the Fair That Changed America (Illinois), SVD rating: 8.48, LinReg rating: 7.86
+
+Name: Millennium Art (Postcard book, 30 detachable postcards), SVD rating: 8.66, LinReg rating: 7.86
+
+Name: Emma (Penguin Popular Classics), SVD rating: 8.59, LinReg rating: 7.86
+
+Name: The Hiding Place, SVD rating: 8.34, LinReg rating: 7.85
+
+Name: Sideways Stories from Wayside School (Wayside School), SVD rating: 8.58, LinReg rating: 7.85
+
+Name: Heart of Gold, SVD rating: 8.02, LinReg rating: 7.85
+
+Name: LITTLE WOMEN, SVD rating: 8.95, LinReg rating: 7.84
+
+Name: My Antonia, SVD rating: 8.18, LinReg rating: 7.84
+
+Name: One for the Money (A Stephanie Plum Novel), SVD rating: 8.08, LinReg rating: 7.84
+
+Name: The Salaryman's Wife (Children of Violence Series), SVD rating: 8.24, LinReg rating: 7.84
+
+Name: The Sunday Wife: A Novel, SVD rating: 8.08, LinReg rating: 7.84
+
+Name: War and Peace (Signet Classics (Paperback)), SVD rating: 8.09, LinReg rating: 7.84
+
+Name: Shutter Island: A Novel, SVD rating: 8.09, LinReg rating: 7.83
+
+Name: Anne of the Island (Anne of Green Gables Series, No. 3), SVD rating: 8.32, LinReg rating: 7.83
+
+Name: Tales of Burning Love : A Novel, SVD rating: 8.13, LinReg rating: 7.82
+
+Name: To the Nines (A Stephanie Plum Novel), SVD rating: 8.02, LinReg rating: 7.82
+
+Name: In the Heart of the Sea: The Tragedy of the Whaleship Essex, SVD rating: 8.85, LinReg rating: 7.81
+
+Name: The Bridge of San Luis Rey (Perennial Classics), SVD rating: 8.22, LinReg rating: 7.81
+
+Name: Bachelor Brothers' Bed &amp; Breakfast, SVD rating: 8.30, LinReg rating: 7.81
+
+Name: The Memoirs of Cleopatra: A Novel, SVD rating: 8.59, LinReg rating: 7.81
+
+Name: Alias Grace, SVD rating: 8.23, LinReg rating: 7.81
+
+Name: The Secret Diary of Adrian Mole Aged 13 3/4, SVD rating: 8.13, LinReg rating: 7.80
+
+Name: The Piano Tuner : A Novel, SVD rating: 8.77, LinReg rating: 7.80
+
+Name: Homeland and Other Stories, SVD rating: 8.02, LinReg rating: 7.79
+
+Name: The Twilight of Courage: A Novel, SVD rating: 8.71, LinReg rating: 7.79
+
+Name: Rubaiyat of Omar Khayyam (Wordsworth Classics), SVD rating: 8.38, LinReg rating: 7.79
+
+Name: The Tempest (Signet Classic Shakespeare Series), SVD rating: 8.25, LinReg rating: 7.78
+
+Name: 1984, SVD rating: 8.16, LinReg rating: 7.78
+
+Name: Prodigal Summer: A Novel, SVD rating: 8.19, LinReg rating: 7.78
+
+Name: I Heard the Owl Call My Name, SVD rating: 8.20, LinReg rating: 7.78
+
+Name: Last Chance Saloon: A Novel, SVD rating: 8.10, LinReg rating: 7.78
+
+Name: Jim the Boy : A Novel, SVD rating: 8.16, LinReg rating: 7.78
+
+Name: Stand, SVD rating: 8.15, LinReg rating: 7.78
+
+Name: The Blue Nowhere : A Novel, SVD rating: 8.02, LinReg rating: 7.77
+
+Name: The Call of the Wild (Apple Classics), SVD rating: 8.28, LinReg rating: 7.77
+
+Name: My Family and Other Animals., SVD rating: 8.32, LinReg rating: 7.77
+
+Name: Travels With My Aunt (Twentieth Century Classics), SVD rating: 8.05, LinReg rating: 7.77
+
+Name: The Cassandra Compact: A Covert-One Novel, SVD rating: 8.07, LinReg rating: 7.77
+
+Name: Are You There God?  It's Me, Margaret, SVD rating: 8.45, LinReg rating: 7.75
+
+Name: Angels &amp; Demons, SVD rating: 8.14, LinReg rating: 7.75
+
+Name: Anne of the Island (Apple Classics), SVD rating: 8.31, LinReg rating: 7.75
+
+Name: The Murder Room, SVD rating: 8.15, LinReg rating: 7.75
+
+Name: A RIVER RUNS THROUGH IT AND OTHER STORIES : AND OTHER STORIES, SVD rating: 8.30, LinReg rating: 7.75
+
+Name: The Color Purple, SVD rating: 9.02, LinReg rating: 7.75
+
+Name: Sticks &amp; Scones, SVD rating: 8.28, LinReg rating: 7.74
+
+Name: Life,the Universe and Everything, SVD rating: 8.61, LinReg rating: 7.73
+
+Name: Daisy Fay and the Miracle Man, SVD rating: 8.86, LinReg rating: 7.73
+
+Name: So Long, and Thanks for all the Fish, SVD rating: 8.35, LinReg rating: 7.72
+
+Name: When I Say No, I Feel Guilty, SVD rating: 8.31, LinReg rating: 7.72
+
+Name: How the Irish Saved Civilization: The Untold Story of Ireland's Heroic Role from the Fall of Rome to the Rise of Medieval Europe (Hinges of History), SVD rating: 8.27, LinReg rating: 7.72
+
+Name: Can You Keep a Secret?, SVD rating: 8.33, LinReg rating: 7.72
+
+Name: A 3rd Serving of Chicken Soup for the Soul (Chicken Soup for the Soul Series (Paper)), SVD rating: 8.13, LinReg rating: 7.72
+
+Name: Anne's House of Dreams, SVD rating: 8.07, LinReg rating: 7.71
+
+Name: Presumed Innocent, SVD rating: 8.14, LinReg rating: 7.71
+
+Name: Wizard of Earthsea, SVD rating: 8.53, LinReg rating: 7.70
+
+Name: Dr. Death: A Novel, SVD rating: 8.05, LinReg rating: 7.70
+
+Name: Flowers for Algernon (Bantam Classic), SVD rating: 8.43, LinReg rating: 7.70
+
+Name: Christy, SVD rating: 8.51, LinReg rating: 7.70
+
+Name: Memoirs of a Geisha, SVD rating: 8.05, LinReg rating: 7.70
+
+Name: The Outlaws of Sherwood, SVD rating: 8.14, LinReg rating: 7.70
+
+Name: HEARTBURN, SVD rating: 8.09, LinReg rating: 7.69
+
+Name: Holidays on Ice : Stories, SVD rating: 8.56, LinReg rating: 7.69
+
+Name: Steppenwolf, SVD rating: 8.18, LinReg rating: 7.69
+
+Name: 1984, SVD rating: 8.08, LinReg rating: 7.69
+
+Name: All Things Wise and Wonderful, SVD rating: 8.14, LinReg rating: 7.69
+
+Name: Fahrenheit 451, SVD rating: 8.20, LinReg rating: 7.69
+
+Name: A Christmas Story : The Book That Inspired the Hilarious Classic Film, SVD rating: 8.16, LinReg rating: 7.68
+
+Name: The Canterville Ghost and Other Stories (Dover Thrift Editions Series), SVD rating: 8.03, LinReg rating: 7.68
+
+Name: Little Altars Everywhere: A Novel, SVD rating: 8.40, LinReg rating: 7.68
+
+Name: Dragonsinger, SVD rating: 8.03, LinReg rating: 7.68
+
+Name: This Must Be Love, SVD rating: 8.29, LinReg rating: 7.68
+
+Name: CONTACT, SVD rating: 8.90, LinReg rating: 7.67
+
+Name: The Hobbit : The Enchanting Prelude to The Lord of the Rings, SVD rating: 9.04, LinReg rating: 7.67
+
+Name: The Fellowship of the Ring (The Lord of the Rings, Part 1), SVD rating: 8.48, LinReg rating: 7.67
+
+Name: The Two Towers (The Lord of the Rings, Part 2), SVD rating: 9.03, LinReg rating: 7.67
+
+Name: Patriot Games, SVD rating: 8.01, LinReg rating: 7.66
+
+Name: A Confederacy of Dunces, SVD rating: 9.34, LinReg rating: 7.66
+
+Name: Chicken Soup for the College Soul : Inspiring and Humorous Stories for College Students (Chicken Soup for the Soul), SVD rating: 8.12, LinReg rating: 7.66
+
+Name: The Wind in the Willows, SVD rating: 8.24, LinReg rating: 7.66
+
+Name: Neue Leiden Des Jungen, SVD rating: 8.28, LinReg rating: 7.66
+
+Name: Abel's Island, SVD rating: 8.17, LinReg rating: 7.66
+
+Name: Lucky Man: A Memoir, SVD rating: 8.71, LinReg rating: 7.66
+
+Name: Outlander, SVD rating: 8.50, LinReg rating: 7.66
+
+Name: Paris 1919 : Six Months That Changed the World, SVD rating: 8.17, LinReg rating: 7.66
+
+Name: El mÃ©dico, SVD rating: 8.09, LinReg rating: 7.66
+
+Name: Les Miserables, SVD rating: 8.41, LinReg rating: 7.66
+
+Name: JOHNSTOWN FLOOD, SVD rating: 8.39, LinReg rating: 7.65
+
+Name: It's Always Something, SVD rating: 8.59, LinReg rating: 7.65
+
+Name: Blue Belle, SVD rating: 8.30, LinReg rating: 7.65
+
+Name: Involved, SVD rating: 8.09, LinReg rating: 7.65
+
+Name: The Parsifal Mosaic, SVD rating: 8.76, LinReg rating: 7.65
+
+Name: Sense and Sensibility, SVD rating: 8.20, LinReg rating: 7.65
+
+Name: Lobo estepario, SVD rating: 8.18, LinReg rating: 7.65
+
+Name: Commitments, SVD rating: 8.03, LinReg rating: 7.65
+
+Name: David Copperfield (Signet Classics (Paperback)), SVD rating: 8.05, LinReg rating: 7.65
+
+Name: Sword of Shannara, SVD rating: 8.12, LinReg rating: 7.65
+
+Name: Lord God Made Them All, SVD rating: 8.05, LinReg rating: 7.65
+
+Name: The Autobiography of Malcolm X, SVD rating: 8.04, LinReg rating: 7.65
+
+Name: A Heartbreaking Work Of Staggering Genius : A Memoir Based on a True Story, SVD rating: 8.15, LinReg rating: 7.65
+
+Name: Staying on (Phoenix Fiction Series), SVD rating: 8.00, LinReg rating: 7.65
+
+Name: Trapped in Bat Wing Hall (Give Yourself Goosebumps, No 3), SVD rating: 8.37, LinReg rating: 7.64
+
+Name: Love Medicine, SVD rating: 8.00, LinReg rating: 7.64
+
+Name: Dragon on a Pedestal, SVD rating: 8.06, LinReg rating: 7.64
+
+Name: A Child Called \It\": One Child's Courage to Survive", SVD rating: 8.96, LinReg rating: 7.64
+
+Name: Imajica, SVD rating: 9.09, LinReg rating: 7.64
+
+Name: Color Purple, SVD rating: 8.36, LinReg rating: 7.64
+
+Name: Chesapeake Blue (Quinn Brothers (Hardcover)), SVD rating: 8.13, LinReg rating: 7.63
+
+Name: Wuthering Heights, SVD rating: 8.39, LinReg rating: 7.63
+
+Name: Fingersmith, SVD rating: 8.25, LinReg rating: 7.63
+
+Name: Coraline, SVD rating: 9.18, LinReg rating: 7.63
+
+Name: Rebecca, SVD rating: 8.74, LinReg rating: 7.63
+
+Name: Where the Red Fern Grows, SVD rating: 8.06, LinReg rating: 7.63
+
+Name: Ramona Quimby, Age 8 (Avon Camelot Books (Paperback)), SVD rating: 8.18, LinReg rating: 7.63
+
+Name: In This Mountain, SVD rating: 8.07, LinReg rating: 7.63
+
+Name: L'Homme Qui Plantait Des Arbres, SVD rating: 8.05, LinReg rating: 7.63
+
+Name: Kissing in Manhattan, SVD rating: 8.38, LinReg rating: 7.63
+
+Name: Chopping Spree, SVD rating: 8.31, LinReg rating: 7.63
+
+Name: Jack of Kinrowan, SVD rating: 8.39, LinReg rating: 7.63
+
+Name: Silent Honor, SVD rating: 8.12, LinReg rating: 7.63
+
+Name: Open Season, SVD rating: 8.11, LinReg rating: 7.63
+
+Name: Morality for Beautiful Girls (No.1 Ladies Detective Agency), SVD rating: 8.18, LinReg rating: 7.63
+
+Name: P Is for Peril, SVD rating: 8.07, LinReg rating: 7.63
+
+Name: Where the Red Fern Grows, SVD rating: 8.03, LinReg rating: 7.63
+
+Name: RAT RACE, SVD rating: 8.28, LinReg rating: 7.63
+
+Name: Kushiel's Dart, SVD rating: 8.25, LinReg rating: 7.62
+
+Name: State of the Art, SVD rating: 8.02, LinReg rating: 7.62
+
+Name: Rainbow's End, SVD rating: 8.21, LinReg rating: 7.62
+
+Name: It Had to Be You, SVD rating: 8.05, LinReg rating: 7.62
+
+Name: A KNIGHT IN SHINING ARMOR PROMOTION, SVD rating: 8.03, LinReg rating: 7.62
+
+Name: The Flanders Panel, SVD rating: 8.32, LinReg rating: 7.62
+
+Name: Evening Class, SVD rating: 8.71, LinReg rating: 7.62
+
+Name: ANGELA'S ASHES, SVD rating: 8.07, LinReg rating: 7.62
+
+Name: Artificios, SVD rating: 8.02, LinReg rating: 7.62
+
+Name: A Prayer for Owen Meany (Ballantine Reader's Circle), SVD rating: 8.35, LinReg rating: 7.62
+
+Name: The Diamond Age, SVD rating: 8.57, LinReg rating: 7.62
+
+Name: Fluke : Or, I Know Why the Winged Whale Sings, SVD rating: 8.12, LinReg rating: 7.61
+
+Name: Blue Mars, SVD rating: 8.41, LinReg rating: 7.61
+
+Name: The Virgin's Knot, SVD rating: 8.17, LinReg rating: 7.61
+
+Name: Late Bloomer (Michaels, Fern), SVD rating: 8.40, LinReg rating: 7.61
+
+Name: The X-Files: Ground Zero, SVD rating: 8.07, LinReg rating: 7.61
+
+Name: Gibbon's Decline and Fall, SVD rating: 8.04, LinReg rating: 7.61
+
+Name: The Virgin Blue, SVD rating: 8.51, LinReg rating: 7.61
+
+Name: The Second Summer of the Sisterhood, SVD rating: 8.43, LinReg rating: 7.61
+
+Name: Sisterhood of the Traveling Pants, SVD rating: 8.27, LinReg rating: 7.61
+
+Name: The CITY WHO FOUGHT (Brainship), SVD rating: 8.07, LinReg rating: 7.61
+
+Name: Anne of the Island, SVD rating: 9.35, LinReg rating: 7.61
+
+Name: The Crush, SVD rating: 8.16, LinReg rating: 7.61
+
+Name: Into the Wild, SVD rating: 9.26, LinReg rating: 7.61
+
+Name: Nights in Rodanthe, SVD rating: 8.62, LinReg rating: 7.61
+
+Name: How Stella Got Her Groove Back, SVD rating: 8.25, LinReg rating: 7.61
+
+Name: Three Junes, SVD rating: 8.04, LinReg rating: 7.61
+
+Name: Light a Penny Candle, SVD rating: 8.56, LinReg rating: 7.61
+
+Name: Living Deliberately: The Discovery and Development of Avatar, SVD rating: 8.08, LinReg rating: 7.61
+
+Name: Shell Seekers, SVD rating: 8.18, LinReg rating: 7.60
+
+Name: The Whale Rider, SVD rating: 8.16, LinReg rating: 7.60
+
+Name: The Cabinet of Curiosities, SVD rating: 8.09, LinReg rating: 7.60
+
+Name: Up Country, SVD rating: 8.57, LinReg rating: 7.60
+
+Name: Princess: A True Story of Life Behind the Veil in Saudi Arabia, SVD rating: 8.09, LinReg rating: 7.60
+
+Name: The Cobra Event, SVD rating: 8.08, LinReg rating: 7.60
+
+Name: No Second  Chance, SVD rating: 9.05, LinReg rating: 7.60
+
+Name: Standing in the Rainbow, SVD rating: 8.27, LinReg rating: 7.60
+
+Name: Kushiel's Chosen (Kushiel's Legacy), SVD rating: 8.29, LinReg rating: 7.60
+
+Name: The Art of Deception, SVD rating: 8.54, LinReg rating: 7.60
+
+Name: Persuasion: With a Memoir of Jane Austen, SVD rating: 8.51, LinReg rating: 7.60
+
+Name: Final Appeal, SVD rating: 8.25, LinReg rating: 7.60
+
+Name: The Partner, SVD rating: 8.66, LinReg rating: 7.60
+
+Name: The BFG, SVD rating: 8.76, LinReg rating: 7.60
+
+Name: The Winner, SVD rating: 8.75, LinReg rating: 7.60
+
+Name: The Remains of the Day (Vintage International), SVD rating: 8.15, LinReg rating: 7.60
+
+Name: Rapture in Death, SVD rating: 8.22, LinReg rating: 7.60
+
+Name: The God of Small Things, SVD rating: 8.77, LinReg rating: 7.60
+
+Name: The Silver Kiss (AFI Film Readers), SVD rating: 8.20, LinReg rating: 7.60
+
+Name: Redeeming Love, SVD rating: 8.80, LinReg rating: 7.59
+
+Name: Out of Sight, SVD rating: 8.04, LinReg rating: 7.59
+
+Name: The Last Juror, SVD rating: 8.41, LinReg rating: 7.59
+
+Name: The Princess Bride: S Morgenstern's Classic Tale of True Love and High Adventure, SVD rating: 9.01, LinReg rating: 7.59
+
+Name: Into Thin Air : A Personal Account of the Mt. Everest Disaster, SVD rating: 8.53, LinReg rating: 7.59
+
+Name: Will of Their Own, SVD rating: 8.05, LinReg rating: 7.59
+
+Name: Chocolat, SVD rating: 8.02, LinReg rating: 7.59
+
+Name: How the Mind Works, SVD rating: 8.03, LinReg rating: 7.59
+
+Name: Angry Housewives Eating Bon Bons (Ballantine Reader's Circle), SVD rating: 8.11, LinReg rating: 7.59
+
+Name: CITIZEN SOLDIERS : THE U S ARMY FROM THE NORMANDY BEACHES TO THE BULGE TO THE SURRENDER OF GERMANY, SVD rating: 8.03, LinReg rating: 7.59
+
+Name: Shadow Prey, SVD rating: 8.12, LinReg rating: 7.59
+
+Name: Chesapeake, SVD rating: 8.11, LinReg rating: 7.58
+
+Name: Oryx and Crake, SVD rating: 8.18, LinReg rating: 7.58
+
+Name: Conspiracy in Death, SVD rating: 8.36, LinReg rating: 7.58
+
+Name: Lonesome Dove, SVD rating: 8.85, LinReg rating: 7.58
+
+Name: To Kill a Mockingbird, SVD rating: 8.12, LinReg rating: 7.58
+
+Name: Sphere, SVD rating: 8.08, LinReg rating: 7.58
+
+Name: Tod in Lissabon., SVD rating: 8.04, LinReg rating: 7.58
+
+Name: Divine Secrets of the Ya-Ya Sisterhood : A Novel, SVD rating: 8.29, LinReg rating: 7.58
+
+Name: Redeeming Claire (Love Inspired (Numbered)), SVD rating: 8.29, LinReg rating: 7.58
+
+Name: The Grasshopper Trap, SVD rating: 8.14, LinReg rating: 7.58
+
+Name: Shutter Island, SVD rating: 8.33, LinReg rating: 7.58
+
+Name: An Unquiet Mind, SVD rating: 8.09, LinReg rating: 7.58
+
+Name: The Haunted Mesa, SVD rating: 8.31, LinReg rating: 7.58
+
+Name: The Godfather, SVD rating: 8.34, LinReg rating: 7.58
+
+Name: Twelve Across, SVD rating: 8.05, LinReg rating: 7.58
+
+Name: Travel Calm, SVD rating: 8.12, LinReg rating: 7.57
+
+Name: The Ballad of Lucy Whipple, SVD rating: 8.09, LinReg rating: 7.57
+
+Name: La tregua, SVD rating: 8.30, LinReg rating: 7.57
+
+Name: The Brethren, SVD rating: 8.11, LinReg rating: 7.57
+
+Name: Protect and Defend, SVD rating: 8.67, LinReg rating: 7.57
+
+Name: Der Kleine Hobbit, SVD rating: 8.16, LinReg rating: 7.57
+
+Name: Serpent Mage, SVD rating: 8.02, LinReg rating: 7.57
+
+Name: A Judgement in Stone, SVD rating: 8.18, LinReg rating: 7.57
+
+Name: What Girls Learn, SVD rating: 8.07, LinReg rating: 7.57
+
+Name: Having Our Say : The Delany Sisters' First 100 Years, SVD rating: 8.27, LinReg rating: 7.57
+
+Name: The Alibi, SVD rating: 8.06, LinReg rating: 7.57
+
+Name: We'll Meet Again, SVD rating: 8.27, LinReg rating: 7.57
+
+Name: From the Corner of His Eye, SVD rating: 8.02, LinReg rating: 7.57
+
+Name: Worst Fears Realized, SVD rating: 8.06, LinReg rating: 7.57
+
+Name: Long, Lean, and Lethal, SVD rating: 8.03, LinReg rating: 7.57
+
+Name: The Kingmaker, SVD rating: 8.09, LinReg rating: 7.57
+
+Name: She Said Yes: The Unlikely Martyrdom of Cassie Bernall, SVD rating: 8.05, LinReg rating: 7.57
+
+Name: The Food Revolution: How Your Diet Can Help Save Your Life and Our World, SVD rating: 8.33, LinReg rating: 7.56
+
+Name: Under the Color of the Law, SVD rating: 8.02, LinReg rating: 7.56
+
+Name: Message in a Bottle, SVD rating: 8.12, LinReg rating: 7.56
+
+Name: Dreamer, SVD rating: 8.11, LinReg rating: 7.56
+
+Name: The Alibi, SVD rating: 9.22, LinReg rating: 7.56
+
+Name: A Fire Upon The Deep (Zones of Thought), SVD rating: 8.10, LinReg rating: 7.56
+
+Name: Silent Spring, SVD rating: 9.19, LinReg rating: 7.56
+
+Name: Glory in Death, SVD rating: 8.53, LinReg rating: 7.56
+
+Name: Judgment in Death, SVD rating: 8.41, LinReg rating: 7.56
+
+Name: Message in a Bottle, SVD rating: 8.01, LinReg rating: 7.56
+
+Name: Bridget Jones's Diary, SVD rating: 8.00, LinReg rating: 7.56
+
+Name: Who's Looking Out for You?, SVD rating: 8.27, LinReg rating: 7.56
+
+Name: Angela's Ashes: A Memoir, SVD rating: 8.89, LinReg rating: 7.56
+
+Name: Holes (Yearling Newbery), SVD rating: 8.21, LinReg rating: 7.56
+
+Name: Frankenstein: Or, the Modern Prometheus (World's Classics), SVD rating: 8.37, LinReg rating: 7.56
+
+Name: The Blind Assassin, SVD rating: 8.44, LinReg rating: 7.56
+
+Name: Sin Destino, SVD rating: 8.27, LinReg rating: 7.56
+
+Name: Franny and Zooey, SVD rating: 8.18, LinReg rating: 7.56
+
+Name: The Fifth Profession, SVD rating: 8.03, LinReg rating: 7.56
+
+Name: Naked in a Pinstriped Suit, SVD rating: 8.52, LinReg rating: 7.55
+
+Name: Betsy and Tacy Go Downtown (Betsy-Tacy), SVD rating: 8.87, LinReg rating: 7.55
+
+Name: The Princess Diaries, SVD rating: 8.44, LinReg rating: 7.55
+
+Name: Plain Truth, SVD rating: 8.18, LinReg rating: 7.55
+
+Name: Wish You Well, SVD rating: 8.28, LinReg rating: 7.55
+
+Name: Desecration: Antichrist Takes the Throne (Left Behind No. 9), SVD rating: 8.21, LinReg rating: 7.55
+
+Name: Raumschiff Titanic., SVD rating: 8.14, LinReg rating: 7.55
+
+Name: I Wish I Had a Red Dress, SVD rating: 8.07, LinReg rating: 7.55
+
+Name: Hadassah: One Night With the King, SVD rating: 8.04, LinReg rating: 7.55
+
+Name: Glorious Appearing: The End of Days (Left Behind #12), SVD rating: 8.05, LinReg rating: 7.55
+
+Name: A Scanner Darkly, SVD rating: 8.15, LinReg rating: 7.55
+
+Name: The Next Accident, SVD rating: 8.15, LinReg rating: 7.55
+
+Name: El Hobbit, SVD rating: 8.77, LinReg rating: 7.54
+
+Name: Plantation: A Lowcountry Tale, SVD rating: 8.55, LinReg rating: 7.54
+
+Name: The Farthest Shore : The Earthsea Cycle, SVD rating: 8.08, LinReg rating: 7.54
+
+Name: The Sigma Protocol, SVD rating: 8.28, LinReg rating: 7.54
+
+Name: Fair and Tender Ladies (Ballantine Reader's Circle), SVD rating: 8.29, LinReg rating: 7.54
+
+Name: 24 Hours, SVD rating: 8.71, LinReg rating: 7.54
+
+Name: Band of Brothers : E Company, 506th Regiment, 101st Airborne from Normandy to Hitler's Eagle's Nest, SVD rating: 8.09, LinReg rating: 7.54
+
+Name: Schweinerei., SVD rating: 8.26, LinReg rating: 7.54
+
+Name: Messiah, SVD rating: 8.43, LinReg rating: 7.54
+
+Name: Soldados De Salamina (Coleccion Andanzas, 433), SVD rating: 8.03, LinReg rating: 7.53
+
+Name: Atonement Child, SVD rating: 8.82, LinReg rating: 7.53
+
+Name: All the Names, SVD rating: 8.17, LinReg rating: 7.53
+
+Name: Gone With the Wind, SVD rating: 8.19, LinReg rating: 7.53
+
+Name: Cosm., SVD rating: 8.16, LinReg rating: 7.53
+
+Name: Tell No One, SVD rating: 8.66, LinReg rating: 7.53
+
+Name: The Charmed Sphere, SVD rating: 8.47, LinReg rating: 7.53
+
+Name: Perfect Timing, SVD rating: 8.22, LinReg rating: 7.53
+
+Name: Fremd kÃ?Â¼ssen., SVD rating: 8.34, LinReg rating: 7.52
+
+Name: Anleitung zum UnglÃ?Â¼cklichsein., SVD rating: 8.38, LinReg rating: 7.52
+
+Name: English Passengers, SVD rating: 8.02, LinReg rating: 7.52
+
+Name: L'Homme des deux tribus, SVD rating: 8.09, LinReg rating: 7.52
+
+Name: From strength to strength: An autobiography, SVD rating: 8.48, LinReg rating: 7.52
+
+Name: The Finishing School, SVD rating: 8.12, LinReg rating: 7.52
+
+Name: Der Vorleser, SVD rating: 8.73, LinReg rating: 7.51
+
+Name: Deadline Poet: My Life As a Doggerelist, SVD rating: 8.04, LinReg rating: 7.51
+
+Name: Wayside School Gets a Little Stranger (Wayside School), SVD rating: 8.22, LinReg rating: 7.51
+
+Name: Red Badge of Courage (World's Best Reading), SVD rating: 8.15, LinReg rating: 7.51
+
+Name: Notes to Myself: A Guided Journal (Guided Journals), SVD rating: 8.30, LinReg rating: 7.51
+
+Name: The Jerusalem Scrolls, SVD rating: 8.19, LinReg rating: 7.51
+
+Name: Never Cry Wolf : Amazing True Story of Life Among Arctic Wolves, SVD rating: 8.14, LinReg rating: 7.51
+
+Name: A Perfect Day, SVD rating: 8.22, LinReg rating: 7.50
+
+Name: Frida: A Biography of Frida Kahlo, SVD rating: 8.03, LinReg rating: 7.49
+
+Name: Snake, the Crocodile &amp; the Dog, The (Amelia Peabody Mysteries (Paperback)), SVD rating: 8.02, LinReg rating: 7.48
+
+Name: Seventh Son (Tales of Alvin Maker (Paperback)), SVD rating: 8.06, LinReg rating: 7.48
+
+Name: In the Fall (Vintage Contemporaries (Paperback)), SVD rating: 8.11, LinReg rating: 7.48
+
+Name: Mondscheintarif, SVD rating: 8.09, LinReg rating: 7.48
+
+Name: La honte, SVD rating: 8.17, LinReg rating: 7.48
+
+Name: Killing the Shadows (St. Martin's Minotaur Mysteries), SVD rating: 8.19, LinReg rating: 7.47
+
+Name: Poppy Done to Death: An Aurora Teagarden Mystery, SVD rating: 8.06, LinReg rating: 7.47
+
+Name: La Cavale du gÃ?Â©omÃ?Â¨tre, SVD rating: 8.06, LinReg rating: 7.47
+
+Name: A Beautiful Mind: The Life of Mathematical Genius and Nobel Laureate John Nash, SVD rating: 8.22, LinReg rating: 7.46
+
+Name: FAT!SO? : Because You Don't Have to Apologize for Your Size, SVD rating: 8.17, LinReg rating: 7.46
+
+Name: Play It Again, Spam: A Pennsylvania-Dutch Mystery With Recipes (Penn Dutch Murder Mysteries, 7), SVD rating: 8.12, LinReg rating: 7.45
+
+Name: Dune (Dune Chronicles (Berkley Paperback)), SVD rating: 8.31, LinReg rating: 7.45
+
+Name: Justice Is Blind-And Her Dog Just Peed in My Cornflakes, SVD rating: 8.35, LinReg rating: 7.44
+
+Name: Dave Gorman's Googlewhack Adventure, SVD rating: 8.07, LinReg rating: 7.44
+
+Name: Die Bildhauerin., SVD rating: 8.60, LinReg rating: 7.43
+
+Name: WEB OF DREAMS (Casteel Saga (Paperback)), SVD rating: 8.34, LinReg rating: 7.43
+
+Name: Door Number Three, SVD rating: 8.02, LinReg rating: 7.42
+
+Name: Black Notice, SVD rating: 8.09, LinReg rating: 7.42
+
+Name: Judiths Liebe (Diogenes Taschenbuch), SVD rating: 8.29, LinReg rating: 7.42
+
+Name: The Blood Doctor, SVD rating: 8.05, LinReg rating: 7.42
+
+Name: Die PÃ?Â¤pstin., SVD rating: 8.90, LinReg rating: 7.41
+
+Name: 31 Days of Praise : Enjoying God Anew, SVD rating: 8.14, LinReg rating: 7.41
+
+Name: Perfume: The Story of a Murderer (Vintage International), SVD rating: 8.36, LinReg rating: 7.40
+
+Name: Demian: The Story of Emil Sinclair's Youth (Perennial Classics), SVD rating: 8.10, LinReg rating: 7.40
+
+Name: The Legacy of Luna: The Story of a Tree, a Woman and the Struggle to Save the Redwoods, SVD rating: 8.23, LinReg rating: 7.40
+
+Name: Sacred Hunger (Norton Paperback Fiction), SVD rating: 8.53, LinReg rating: 7.39
+
+Name: The Great Book of Amber: The Complete Amber Chronicles, 1-10 (Chronicles of Amber), SVD rating: 8.13, LinReg rating: 7.39
+
+Name: The Ape Who Guards the Balance : An Amelia Peabody Mystery, SVD rating: 8.29, LinReg rating: 7.39
+
+Name: The New York Trilogy: City of Glass, Ghosts, the Locked Room (Contemporary American Fiction Series), SVD rating: 8.04, LinReg rating: 7.38
+
+Name: Witch and Wombat, SVD rating: 8.11, LinReg rating: 7.38
+
+Name: Finding God in the Lord of the Rings, SVD rating: 8.03, LinReg rating: 7.38
+
+Name: Die Form des Wassers. Commissario Montalbano lÃ?Â¶st seinen ersten Fall., SVD rating: 8.02, LinReg rating: 7.36
+
+Name: La Rage au coeur, SVD rating: 8.31, LinReg rating: 7.36
+
+Name: 1421: The Year China Discovered America, SVD rating: 8.13, LinReg rating: 7.34
+
+Name: Pathways (Star Trek Voyager), SVD rating: 8.03, LinReg rating: 7.31
+
+Name: Haunted America (Haunted America), SVD rating: 8.28, LinReg rating: 7.31
+
+Name: The Memory of Earth (Homecoming (Paperback)), SVD rating: 8.09, LinReg rating: 7.31
+
+Name: Old Songs in a New Cafe : Selected Essays, SVD rating: 8.04, LinReg rating: 7.29
+
+Name: Die Germanistin., SVD rating: 8.03, LinReg rating: 7.29
+
+Name: Einfach gÃ?Â¶ttlich. Ein Roman von der bizarren Scheibenwelt., SVD rating: 8.34, LinReg rating: 7.28
+
+Name: Pictures of Perfection: A Dalziel/Pascoe Mystery (Dalziel and Pascoe Mysteries (Paperback)), SVD rating: 8.08, LinReg rating: 7.27
+
+Name: The Big Sleep, SVD rating: 8.37, LinReg rating: 7.21
+
+Name: The Hitchhiker's Guide to the Galaxy, SVD rating: 9.41, LinReg rating: 7.19
+
+Name: The Hunt for Red October (Jack Ryan Novels), SVD rating: 8.18, LinReg rating: 7.17
+
+Name: The Woman's Dictionary of Symbols and Sacred Objects (More Crystals and New Age), SVD rating: 8.23, LinReg rating: 7.16
+
+Name: The Nitpickers Guide for Next Generation Trekkers, SVD rating: 8.82, LinReg rating: 7.15
+
+Name: King of the Wind : The Story of the Godolphin Arabian, SVD rating: 8.06, LinReg rating: 7.15
+
+Name: Big Cherry Holler, SVD rating: 8.02, LinReg rating: 7.14
+
+Name: Roses Are Red (Alex Cross Novels), SVD rating: 9.11, LinReg rating: 7.10
+
+Name: The Teeth of the Tiger (Jack Ryan Novels), SVD rating: 8.20, LinReg rating: 7.03
+
+Name: A Hero's Kiss (3 Novels in 1), SVD rating: 8.13, LinReg rating: 7.03
+
+Name: The Bookman's Wake (Cliff Janeway Novels (Paperback)), SVD rating: 8.48, LinReg rating: 7.00
+
+Name: Small Gods (Discworld Novels (Paperback)), SVD rating: 8.15, LinReg rating: 6.99
+
+Name: Interesting Times (Discworld Novels (Paperback)), SVD rating: 8.02, LinReg rating: 6.98
+
+Name: A Caress of Twilight (Meredith Gentry Novels (Paperback)), SVD rating: 8.33, LinReg rating: 6.98
+
+Name: The Higher Taste: A Guide to Gourmet Vegetarian Cooking and a Karma-Free Diet, SVD rating: 8.08, LinReg rating: 6.93
+
+Name: Triumph of the Darksword (Darksword Trilogy), SVD rating: 8.07, LinReg rating: 6.84
+
+Name: The Blue Edge of Midnight (Max Freeman Novels (Paperback)), SVD rating: 8.30, LinReg rating: 6.82
+
