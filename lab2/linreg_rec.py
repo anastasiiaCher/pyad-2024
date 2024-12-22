@@ -11,6 +11,7 @@ from sklearn.metrics import mean_absolute_error
 
 nltk.download("stopwords")
 nltk.download("punkt")
+nltk.download('punkt_tab')
 
 def books_preprocessing(df: pd.DataFrame) -> pd.DataFrame:
     df = df.drop(columns=['Image-URL-S', 'Image-URL-M', 'Image-URL-L'])
