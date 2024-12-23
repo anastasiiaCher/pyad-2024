@@ -39,7 +39,6 @@ def modeling(ratings: pd.DataFrame) -> None:
     3. Подобрать гиперпараметры (при необходимости)
     4. Сохранить модель"""
 
-
     from surprise import SVD, Dataset, Reader
     from surprise.model_selection import train_test_split
     from surprise import accuracy
