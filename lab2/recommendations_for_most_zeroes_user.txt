@@ -1,0 +1,164 @@
+Book: A Time to Kill
+Predicted rating: 8.19
+LinReg rating: 40.90
+
+Book: Evening Class
+Predicted rating: 8.03
+LinReg rating: 11.99
+
+Book: Lonesome Dove
+Predicted rating: 8.62
+LinReg rating: 6.64
+
+Book: The Hunt for Red October
+Predicted rating: 8.12
+LinReg rating: 3.35
+
+Book: Persuasion
+Predicted rating: 8.20
+LinReg rating: 1.69
+
+Book: James and the Giant Peach
+Predicted rating: 8.05
+LinReg rating: 0.90
+
+Book: Rising Tides
+Predicted rating: 8.06
+LinReg rating: -2.17
+
+Book: October Sky: A Memoir
+Predicted rating: 8.34
+LinReg rating: -4.07
+
+Book: The Lion, the Witch and the Wardrobe (Full-Color Collector's Edition)
+Predicted rating: 8.22
+LinReg rating: -4.55
+
+Book: The Magician's Nephew (Narnia)
+Predicted rating: 8.33
+LinReg rating: -4.62
+
+Book: The Magician's Nephew (rack) (Narnia)
+Predicted rating: 8.12
+LinReg rating: -9.34
+
+Book: The Hobbit : The Enchanting Prelude to The Lord of the Rings
+Predicted rating: 8.12
+LinReg rating: -14.17
+
+Book: The Phantom Tollbooth
+Predicted rating: 8.23
+LinReg rating: -14.70
+
+Book: The Giver (21st Century Reference)
+Predicted rating: 8.32
+LinReg rating: -22.00
+
+Book: The Color Purple
+Predicted rating: 8.24
+LinReg rating: -22.69
+
+Book: Sideways Stories from Wayside School (Wayside School)
+Predicted rating: 8.02
+LinReg rating: -25.66
+
+Book: Dealing With Dragons (Enchanted Forest Chronicles (Paperback))
+Predicted rating: 8.02
+LinReg rating: -28.80
+
+Book: Howl and Other Poems (Pocket Poets)
+Predicted rating: 8.09
+LinReg rating: -29.78
+
+Book: Yukon Ho!
+Predicted rating: 8.14
+LinReg rating: -39.71
+
+Book: Harry Potter and the Sorcerer's Stone (Harry Potter (Paperback))
+Predicted rating: 8.36
+LinReg rating: -40.01
+
+Book: Your Erroneous Zones
+Predicted rating: 8.05
+LinReg rating: -46.33
+
+Book: Goodnight Moon Board Book
+Predicted rating: 8.14
+LinReg rating: -46.37
+
+Book: A Wrinkle in Time
+Predicted rating: 8.41
+LinReg rating: -53.42
+
+Book: A Wrinkle In Time
+Predicted rating: 8.46
+LinReg rating: -69.70
+
+Book: Stuart Little
+Predicted rating: 8.05
+LinReg rating: -87.77
+
+Book: Charlotte's Web (Trophy Newbery)
+Predicted rating: 8.12
+LinReg rating: -87.78
+
+Book: Night
+Predicted rating: 8.06
+LinReg rating: -95.01
+
+Book: The Hot Zone
+Predicted rating: 8.21
+LinReg rating: -108.90
+
+Book: She Said Yes : The Unlikely Martyrdom of Cassie Bernall
+Predicted rating: 8.11
+LinReg rating: -135.76
+
+Book: Tread Softly
+Predicted rating: 8.15
+LinReg rating: -165.29
+
+Book: Master and Commander (Aubrey-Maturin (Paperback))
+Predicted rating: 8.17
+LinReg rating: -166.87
+
+Book: One Flew Over the Cuckoo's Nest
+Predicted rating: 8.06
+LinReg rating: -184.33
+
+Book: Walden and Other Writings
+Predicted rating: 8.11
+LinReg rating: -189.00
+
+Book: On the Banks of Plum Creek
+Predicted rating: 8.46
+LinReg rating: -222.21
+
+Book: Little House in the Big Woods
+Predicted rating: 8.00
+LinReg rating: -222.23
+
+Book: Fair and Tender Ladies
+Predicted rating: 8.15
+LinReg rating: -229.79
+
+Book: The Biggest Pumpkin Ever
+Predicted rating: 8.09
+LinReg rating: -272.35
+
+Book: The Monster at the End of This Book
+Predicted rating: 8.20
+LinReg rating: -329.59
+
+Book: The Black Cauldron (Chronicles of Prydain (Paperback))
+Predicted rating: 8.06
+LinReg rating: -375.35
+
+Book: The Grey King (The Dark is Rising Sequence)
+Predicted rating: 8.17
+LinReg rating: -751.08
+
+Book: The Titanic: Lost and Found (Step-Into-Reading, Step 4)
+Predicted rating: 8.01
+LinReg rating: -800.72
+

@@ -22,3 +22,10 @@ class RecsTestCase(unittest.TestCase):
         predictions = loaded_linreg.predict(td)
         mae = mean_absolute_error(y, predictions)
         self.assertLessEqual(mae, 1.5)
+
+
+# test = RecsTestCase()
+# test.test_svd_recs()
+# print('Первый тест прошел')
+# test.test_linreg_recs
+# print('Второй тест прошел')
