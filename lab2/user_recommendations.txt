@@ -1,0 +1,156 @@
+Book: Harry Potter and the Sorcerer's Stone (Harry Potter (Paperback))
+Predicted rating: 8.01
+SGD rating: 15.68
+
+Book: A Time to Kill
+Predicted rating: 8.13
+SGD rating: 12.83
+
+Book: The Twits
+Predicted rating: 8.07
+SGD rating: 9.89
+
+Book: Harry Potter and the Chamber of Secrets (Book 2)
+Predicted rating: 8.03
+SGD rating: 7.52
+
+Book: Yukon Ho!
+Predicted rating: 8.21
+SGD rating: 6.05
+
+Book: Charlotte's Web (Trophy Newbery)
+Predicted rating: 8.26
+SGD rating: 3.53
+
+Book: The Talisman
+Predicted rating: 8.07
+SGD rating: 0.99
+
+Book: The Green Mile
+Predicted rating: 8.00
+SGD rating: -0.53
+
+Book: She Said Yes : The Unlikely Martyrdom of Cassie Bernall
+Predicted rating: 8.10
+SGD rating: -1.24
+
+Book: The Hunt for Red October
+Predicted rating: 8.01
+SGD rating: -2.66
+
+Book: The Color Purple
+Predicted rating: 8.22
+SGD rating: -4.18
+
+Book: Hop on Pop (I Can Read It All by Myself Beginner Books)
+Predicted rating: 8.00
+SGD rating: -4.22
+
+Book: Far Side Gallery 2
+Predicted rating: 8.07
+SGD rating: -15.17
+
+Book: The Thorn Birds
+Predicted rating: 8.01
+SGD rating: -23.02
+
+Book: The Hobbit : The Enchanting Prelude to The Lord of the Rings
+Predicted rating: 8.05
+SGD rating: -24.17
+
+Book: Into Thin Air : A Personal Account of the Mount Everest Disaster
+Predicted rating: 8.03
+SGD rating: -25.28
+
+Book: Evening Class
+Predicted rating: 8.11
+SGD rating: -28.15
+
+Book: Persuasion
+Predicted rating: 8.01
+SGD rating: -33.87
+
+Book: The Phantom Tollbooth
+Predicted rating: 8.24
+SGD rating: -40.71
+
+Book: Alexander And The Terrible, Horrible, No Good, Very Bad Day
+Predicted rating: 8.00
+SGD rating: -45.29
+
+Book: The Very Best Baby Name Book in the Whole Wide World
+Predicted rating: 8.14
+SGD rating: -53.94
+
+Book: Lonesome Dove
+Predicted rating: 8.51
+SGD rating: -60.45
+
+Book: The Magician's Nephew (Narnia)
+Predicted rating: 8.20
+SGD rating: -61.65
+
+Book: The Lion, the Witch and the Wardrobe (Full-Color Collector's Edition)
+Predicted rating: 8.46
+SGD rating: -61.78
+
+Book: October Sky: A Memoir
+Predicted rating: 8.19
+SGD rating: -62.20
+
+Book: The Giver (21st Century Reference)
+Predicted rating: 8.28
+SGD rating: -68.82
+
+Book: Howl and Other Poems (Pocket Poets)
+Predicted rating: 8.07
+SGD rating: -78.21
+
+Book: Love You Forever
+Predicted rating: 8.02
+SGD rating: -96.78
+
+Book: The Hot Zone
+Predicted rating: 8.01
+SGD rating: -98.37
+
+Book: A Wrinkle In Time
+Predicted rating: 8.20
+SGD rating: -124.51
+
+Book: A Swiftly Tilting Planet
+Predicted rating: 8.00
+SGD rating: -126.35
+
+Book: A Wrinkle in Time
+Predicted rating: 8.05
+SGD rating: -126.60
+
+Book: Cat in the Hat (I Can Read It All by Myself Beginner Books)
+Predicted rating: 8.15
+SGD rating: -137.82
+
+Book: Inferno (Mentor)
+Predicted rating: 8.10
+SGD rating: -201.44
+
+Book: The Black Cauldron (Chronicles of Prydain (Paperback))
+Predicted rating: 8.12
+SGD rating: -284.25
+
+Book: Snow White and the Seven Dwarfs
+Predicted rating: 8.28
+SGD rating: -292.86
+
+Book: The Monster at the End of This Book
+Predicted rating: 8.15
+SGD rating: -313.57
+
+Book: Goodnight Moon Board Book
+Predicted rating: 8.47
+SGD rating: -444.48
+
+Book: The Biggest Pumpkin Ever
+Predicted rating: 8.35
+SGD rating: -818.31
+
