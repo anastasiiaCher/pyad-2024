@@ -127,7 +127,7 @@ def modeling(books: pd.DataFrame, ratings: pd.DataFrame) -> None:
     y = final_df['Book-Rating']
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.01, random_state=42)
     vectorizer = TfidfVectorizer(max_features=1003)
-    titles = final_df['Book-Title']  # .apply(title_preprocessing)
+    titles = final_df['Book-Title']  
     X_titles_train = vectorizer.fit_transform(titles.iloc[X_train.index])
     X_titles_test = vectorizer.transform(titles.iloc[X_test.index])
     
@@ -151,7 +151,4 @@ books1 = pd.read_csv("Books.csv")
 ratings1 = pd.read_csv("Ratings.csv")
 filtered_ratings1 = ratings_preprocessing(ratings1)
 filtered_books1 = books_preprocessing(books1)
-
-filtered_ratings1.info()
-filtered_books1.info()
 modeling(filtered_books1, filtered_ratings1)
