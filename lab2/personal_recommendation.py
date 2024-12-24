@@ -53,3 +53,35 @@ final_rec = pd.merge(final_rec, prepared_raitings, on="ISBN", how="inner")
 
 # сортируем книги по убыванию рейтинга линейной модели
 final_rec.sort_values("LinReg_Rating", ascending=False, inplace=True)
+
+"""
+Title: Goodnight Moon Board Book
+Author: Margaret Wise Brown
+SVD_Rating: 8.495695851977084
+LinReg_Rating: 7.941563866945958
+Average-Book-Rating: 9.714285714285714
+
+Title: Hop on Pop (I Can Read It All by Myself Beginner Books)
+Author: Dr. Seuss
+SVD_Rating: 8.291104768151898
+LinReg_Rating: 7.897416735040417
+Average-Book-Rating: 8.833333333333334
+
+Title: The Green Mile
+Author: Stephen King
+SVD_Rating: 8.203310692802829
+LinReg_Rating: 7.853065212809429
+Average-Book-Rating: 8.647058823529411
+
+Title: The Magician's Nephew (rack) (Narnia)
+Author: C. S. Lewis
+SVD_Rating: 8.283761979756003
+LinReg_Rating: 7.836665200777319
+Average-Book-Rating: 8.67741935483871
+
+Title: All Around the Town
+Author: Mary Higgins Clark
+SVD_Rating: 8.095774718576658
+LinReg_Rating: 7.82662103391578
+Average-Book-Rating: 8.196078431372548
+"""
